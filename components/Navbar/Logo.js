@@ -5,7 +5,7 @@ const Logo = () => {
         width="50px"
         height="50px"
         viewBox="0 0 64 64"
-        ariaHidden="true"
+        aria-hidden="true"
         role="img"
         preserveAspectRatio="xMidYMid meet"
       >

@@ -7,6 +7,7 @@
   --white-secondary: rgb(211, 211, 211);
   --green-primary: #3aa885;
   --blue-primary: #398197;
+  overflow-x: hidden;
 }
 
 body {
