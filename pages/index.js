@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
+      <Navbar/>
       <Hero/>
       </>
     </>

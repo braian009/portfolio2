@@ -1,0 +1,87 @@
+.container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 4.5em;
+  background-color: hsla(0, 0%, 14%, 0.5);
+  z-index: 50;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1em 2.5em;
+  margin: 0 auto;
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLogo {
+  width: 2em;
+  height: 2em;
+}
+
+.navLogo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.navLogo path {
+  fill: #f8f8f8;
+}
+
+.navMenu {
+  height: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.navMenu button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4em;
+  border-radius: 22px;
+  height: 4em;
+  display: block;
+  border: none;
+  background: none;
+}
+
+.navMenu button svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+.navMenu button svg path {
+  fill: #f8f8f8;
+}
+
+.navMenu ul {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMenu ul li {
+  font-size: 0.85rem;
+  padding: 0.4em 0.8em;
+}
+
+.navMenu ul li + li {
+  margin-left: 1em;
+}
+
+@media (min-width: 40em) {
+  .navMenu ul {
+    display: flex;
+  }
+  .navMenu button {
+    display: none;
+  }
+}
