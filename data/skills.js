@@ -1,0 +1,16 @@
+export default [
+  "React",
+  "Next.js",
+  "Redux",
+  "Django",
+  "Rest Framework",
+  "PostgreSQL",
+  "HTML5",
+  "CSS3",
+  "Jest",
+  "React Testing Library",
+  "Styled Components",
+  "Git",
+  "pgAdmin",
+  "Unittest",
+];
