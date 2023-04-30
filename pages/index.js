@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import About from "@/components/About";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <>
       <Navbar/>
       <Hero/>
+      <About/>
       </>
     </>
   );
