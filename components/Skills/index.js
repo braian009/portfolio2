@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./skills.module.css";
 import skills from "@/data/skills";
+import TagList from "./TagList";
 
 
 const Skills = () => {
@@ -9,15 +10,7 @@ const Skills = () => {
       <div className={styles.inner}>
         <h1>Skills</h1>
         <div>
-          <ul className={styles.tagsContainer}>
-            {skills.map((skill, i) => {
-              return (
-                <li key={`skill-${i}`} className={styles.tagContainer}>
-                  {skill}
-                </li>
-              );
-            })}
-          </ul>
+          <TagList items={skills} keyName={'items'}/>
         </div>
       </div>
     </div>
