@@ -1,10 +1,12 @@
 .container {
   position: absolute;
   top: 0;
+
   width: 100%;
   height: 4.5em;
-  /* background-color: hsla(0, 0%, 14%, 0.5); */
-  z-index: 50;
+
+  background-color: hsl(220, 22%, 9%);
+  z-index: 100;
 }
 
 .inner {
@@ -33,24 +35,24 @@
 }
 
 .navMenu {
-  height: 100%;
-  position: relative;
   display: grid;
   place-items: center;
+  position: relative;
+
+  height: 100%;
   width: 60%;
 }
 
 .navMenu button {
+  display: block;
   position: absolute;
   right: 0;
   top: 50%;
+
+  height: 4.5em;
+  width: 4.5em;
   transform: translateY(-50%);
-  width: 4em;
-  border-radius: 22px;
-  height: 4em;
-  display: block;
-  border: none;
-  background: none;
+  cursor: pointer;
 }
 
 .navMenu button svg {
@@ -63,66 +65,67 @@
 }
 
 .navMenu ul {
-  position: absolute;
-  bottom: 0;
-  transform: translateY(calc(102% + 1em)) translateX(2em) skewX(15deg);
-  width: 150%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: flex-start;
-  background-color: #101319;
-  background: linear-gradient(to right, #101319 90%, transparent);
-  border-left: 1px solid #f8f8f8;
-  border-bottom: 1px solid #f8f8f8;
 
-  /* border-radius: 22px; */
+  position: absolute;
+  bottom: 0;
+  width: 130%;
+
   padding: 2em 0;
+  transform: translateY(calc(100% + 1em)) translateX(2.5em) skewX(15deg);
+  background-color: hsl(220, 22%, 9%);
+
+  border-left: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  border-bottom-left-radius: 22px;
 }
 
 .navMenu ul li {
   font-size: 0.85rem;
   position: relative;
+  width: 10em;
+
   padding: 1em 1em;
-  width: 12em;
-  margin-left: 4em;
+  margin-left: calc(1em + 10vw);
   transform: skew(-15deg) !important;
   text-align: left !important;
+  cursor: pointer;
 }
 
 .navMenu ul li::before {
-    height: 50%;
-    display: block;
-    content: '';
-    position: absolute;
-    right: 4em;
-    top: 50%;
-    transform: translateY(-50%) skewX(15deg);
-    background-color: #f8f8f8;
-    width: 1px;
+  display: block;
+  content: "";
+  position: absolute;
+  right: 3em;
+  top: 50%;
+
+  height: 50%;
+  transform: translateY(-50%) skewX(15deg);
+  background-color: #bfbfbf;
+  width: 1px;
 }
 
-/* .navMenu ul li + li {
-  margin-left: 1em;
-} */
-
-@media (min-width: 40em) {
+@media (min-width: 35em) {
   .navMenu {
     width: auto;
   }
   .navMenu ul {
+    flex-direction: row;
+    gap: 1em;
     position: relative !important;
     bottom: 0;
+
     transform: none;
-    flex-direction: row;
-    align-items: center;
     clip-path: none !important;
     background: none;
-    border: none;
     width: auto;
     max-width: 24em;
-    gap: 1em;
+
     padding: 0;
+    border: none;
+    border-radius: 0;
   }
 
   .navMenu ul li {
