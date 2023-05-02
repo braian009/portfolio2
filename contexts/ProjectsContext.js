@@ -16,7 +16,7 @@ const ProjectContextProvider = ({ children }) => {
   let currentProject = projects[index];
 
   const goNextProject = () => {
-    let nextIndex = index === projects.length ? 0 : index + 1;
+    let nextIndex = index === projects.length -1 ? 0 : index + 1;
 
     setIndex(nextIndex);
   };
@@ -34,7 +34,7 @@ const ProjectContextProvider = ({ children }) => {
   return (
     <ProjectsContext.Provider
       value={{
-        projects,
+        projectList,
         currentProject,
         index,
         goNextProject,
@@ -47,4 +47,4 @@ const ProjectContextProvider = ({ children }) => {
   );
 };
 
-export default ProjectContextProvider;
+export { ProjectsContext, ProjectContextProvider };

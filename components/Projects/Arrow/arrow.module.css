@@ -1,0 +1,26 @@
+.ArrowContainer {
+  position: absolute;
+  top: 50%;
+  width: 2em;
+  height: 2em;
+  border-radius: 0.4em;
+  opacity: 0.4;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.ArrowContainer div {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.ArrowContainer div svg {
+  width: 2em !important;
+  height: 2em !important;
+  fill: black;
+  stroke: black;
+  opacity: 1;
+}
+
