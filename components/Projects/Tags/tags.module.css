@@ -1,8 +1,8 @@
 .tagsContainer {
   display: flex;
-  justify-content: space-between;
-  gap: 0.5em;
-  width: 14em;
+  justify-content: space-evenly;
+
+  max-width: 14em;
   margin: 0 auto;
 }
 
@@ -10,7 +10,7 @@
   display: grid;
   place-items: center;
   width: 1.5em;
-  height: 0.5em;
+  height: 0.45em;
   border-radius: 22px;
 
   border: 1px solid #f8f8f8;
