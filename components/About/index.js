@@ -1,9 +1,15 @@
 import * as React from "react";
 import Image from "next/image";
 import styles from "./about.module.css";
+import Cards from "./Cards";
+import Summary from "./Summary";
 
 const About = () => {
   const [active, setActive] = React.useState(0);
+
+  const onChangeCard = (i) => {
+    setActive(i);
+  };
 
   return (
     <div className={styles.aboutContainer}>
@@ -15,33 +21,9 @@ const About = () => {
       />
       <div className={styles.aboutInner}>
         <h1>About</h1>
+        <Cards onChangeCard={onChangeCard} />
+        <Summary />
 
-        <div className={styles.cardsContainer}>
-          <div className={styles.cardContainer}>
-            <h3 onClick={() => setActive(0)}>title</h3>
-            <p>
-              Fugiat veniam cupidatat est sint velit reprehenderit culpa culpa
-              laborum laborum pariatur Lorem. culpa culpa laborum laborum
-              pariatur Lorem.
-            </p>
-          </div>
-          <div className={styles.cardContainer}>
-            <h3 onClick={() => setActive(1)}>title</h3>
-            <p>
-              Fugiat veniam cupidatat est sint velit reprehenderit culpa culpa
-              laborum laborum pariatur Lorem. culpa culpa laborum laborum
-              pariatur Lorem.
-            </p>
-          </div>
-          <div className={styles.cardContainer}>
-            <h3 onClick={() => setActive(2)}>title</h3>
-            <p>
-              Fugiat veniam cupidatat est sint velit reprehenderit culpa culpa
-              laborum laborum pariatur Lorem. culpa culpa laborum laborum
-              pariatur Lorem.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

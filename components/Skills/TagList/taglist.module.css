@@ -1,31 +1,31 @@
 .tagsContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8.5em, 1fr));
-    grid-auto-rows: 1fr;
-    justify-content: center;
-    align-content: center;
-    gap: 1em 0;
-  
-    position: relative;
-    width: 95%;
-    padding: 1em;
-    margin: 0 auto;
-    overflow-x: hidden;
-  }
-  
-  .tagContainer {
-    font-size: 0.6rem;
-    display: grid;
-    place-items: center;
-    position: relative;
-    text-align: center;
-  
-    padding: 0.5em 0.8em;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-  
-  .tagContainer:before {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5em, 1fr));
+  grid-auto-rows: 1fr;
+  justify-content: center;
+  align-content: center;
+  gap: 1em 0;
+
+  position: relative;
+  width: 95%;
+  padding: 1.25em 1em;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.tagContainer {
+  font-size: 0.6rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+  text-align: center;
+
+  padding: 0.5em 0.8em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* .tagContainer:before {
     display: block;
     content: "";
     position: absolute;
@@ -36,11 +36,25 @@
     opacity: 1;
     transform: skew(-35deg);
     background-color: var(--green-primary);
+  } */
+
+.tagContainer:before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  height: 2px;
+  width: 40%;
+  opacity: 1;
+  transform: skew(-35deg);
+  background-color: var(--green-primary);
+  box-shadow: 0 0 13.1544px var(--green-primary),
+    0 0 3.7584px var(--green-primary), 0 0 1.8792px var(--green-primary);
+}
+
+@media (min-width: 35em) {
+  .tagContainer {
+    font-size: 0.65rem;
   }
-  
-  @media (min-width: 35em) {
-    .tagContainer {
-      font-size: 0.65rem;
-    }
-  }
-  
+}

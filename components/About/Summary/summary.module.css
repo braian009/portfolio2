@@ -1,0 +1,27 @@
+.summaryContainer {
+  position: absolute;
+  top: 1em;
+  right: 0;
+  width: 75vw;
+  height: auto;
+  padding: 2em;
+  padding-right: 4em;
+  background-color: #1c1c1c;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+.summaryContainer h4 {
+  font-size: 0.8rem;
+  margin-bottom: 1em;
+}
+
+.summaryContainer p {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 40em) {
+  .summaryContainer {
+    width: 50vw;
+  }
+}

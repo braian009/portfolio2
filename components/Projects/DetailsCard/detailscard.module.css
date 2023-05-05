@@ -63,17 +63,17 @@
 }
 
 .list ul {
-  /* border-bottom: 2px solid var(--blue-primary); */
   padding: .25em 0 .35em 0;
   padding-left: 1em;
 }
 
 .list ul li {
-  font-size: 0.725rem;
+  font-size: 0.7rem;
   color: var(--white-secondary);
   display: inline-block;
   padding: 0.25em 0.7em;
-  background-color: #242424;
+  background-color: hsl(220, 27%, 8%);
+  border: 1px solid #393939;
   border-radius: 22px;
 }
 
