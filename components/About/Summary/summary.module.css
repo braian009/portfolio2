@@ -5,8 +5,9 @@
   width: 75vw;
   height: auto;
   padding: 2em;
-  padding-right: 4em;
+  padding-right: 5em;
   background-color: #1c1c1c;
+  background-color: hsl(161, 19%, 19%);
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
 }

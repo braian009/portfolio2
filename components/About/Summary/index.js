@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./summary.module.css";
+import { motion } from "framer-motion";
 
 const Summary = () => {
   return (
