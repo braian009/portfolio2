@@ -49,6 +49,7 @@
   transform: skew(32deg);
   min-height: 100%;
   width: 30%;
+  
 }
 
 .list > div:before {

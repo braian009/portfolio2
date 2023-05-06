@@ -28,12 +28,12 @@
   display: grid;
   justify-items: center;
   grid-template-rows: 45vh 0.5em auto;
-  gap: 1em;
+  gap: 0.5em;
 
   width: 100%;
   max-width: 40em;
   margin: 0 auto;
   height: 75vh;
-  min-height: 75vh;
+  min-height: 79vh;
   padding: 0 0.5em;
 }

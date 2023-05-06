@@ -35,13 +35,13 @@ const About = () => {
       <AnimatePresence>
         {summaryActive && (
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 0}}
             animate={{ opacity: 1}}
-            exit={{ opacity: 0 }}
+            exit={{ opacity: 0}}
             transition={{
               type: 'spring',
               ease: 'easeOut', 
-              duration: 0.6,
+              duration: 0.5,
             }}
           >
             <Summary />
