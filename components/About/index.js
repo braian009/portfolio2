@@ -35,16 +35,42 @@ const About = () => {
       <AnimatePresence>
         {summaryActive && (
           <motion.div
-            initial={{ opacity: 0}}
-            animate={{ opacity: 1}}
-            exit={{ opacity: 0}}
-            transition={{
-              type: 'spring',
-              ease: 'easeOut', 
-              duration: 0.5,
+            style={{
+              position: "absolute",
+              top: 0,
+              bottom: 0,
+              width: "100%",
+              backgroundImage: `url(/./assets/about/clouds.jpg)`,
+
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
             }}
+            initial={{ opacity: 0,  }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{
+              when: 'beforeChildren',
+              duration: 0.3,
+            }}
+
           >
-            <Summary />
+            <motion.div
+              initial={{  opacity: 0, x: 100,  }}
+              animate={{   opacity: 1, x: 0 }}
+              exit={{  opacity: 0, x: 100, }}
+              transition={{
+                type: "spring",
+                ease: "easeOut",
+                duration: 0.4,
+              }}
+              style={{
+                position: "absolute",
+                top: "1em",
+                right: 0,
+              }}
+            >
+              <Summary />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

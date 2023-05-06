@@ -1,28 +1,39 @@
 .summaryContainer {
-  position: absolute;
-  top: 1em;
-  right: 0;
-  width: 75vw;
+  position: relative;
+  width: 100%;
   height: auto;
   padding: 2em;
-  padding-right: 5em;
   background-color: #1c1c1c;
   background-color: hsl(161, 19%, 19%);
-  border-top-left-radius: 22px;
-  border-bottom-left-radius: 22px;
+  /* background: linear-gradient(
+    to right,
+    transparent 1%,
+    hsl(161, 19%, 19%) 10%,
+    hsl(161, 19%, 19%)
+  ); */
+  /* border-top-left-radius:22px;
+  border-bottom-left-radius: 22px; */
+  transform: skew(-15deg);
+  transform-origin: bottom;
+  /* border-radius: 50%; */
+  border-left: 4px solid white;
 }
+
+
 
 .summaryContainer h4 {
   font-size: 0.8rem;
   margin-bottom: 1em;
+  max-width: 12.5em;
 }
 
 .summaryContainer p {
   font-size: 0.75rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 30em) {
   .summaryContainer {
-    width: 50vw;
+    width: 75vw;
+    max-width: 35em;
   }
 }
