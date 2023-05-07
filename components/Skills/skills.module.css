@@ -6,9 +6,22 @@
 
   width: 100%;
   min-height: 60vh;
-  background-color: #101319;
+  overflow: hidden;
  
 }
+.container:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  width: 22vw;
+  transform: translateX(-50%);
+  background-color: #393939;
+}
+
+
 
 .inner {
   display: grid;

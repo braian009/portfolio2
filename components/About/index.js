@@ -65,8 +65,9 @@ const About = () => {
               }}
               style={{
                 position: "absolute",
-                top: "1em",
-                right: 0,
+                width: '100%',
+                top: 0,
+                bottom: 0,
               }}
             >
               <Summary />

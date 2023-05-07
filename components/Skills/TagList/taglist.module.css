@@ -10,8 +10,15 @@
   width: 95%;
   padding: 1.25em 1em;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
+  background-color: #101319;
+
+
+
 }
+
+
+
 
 .tagContainer {
   font-size: 0.6rem;
