@@ -2,7 +2,7 @@ import * as React from "react";
 import styles from "./skills.module.css";
 import skills from "@/data/skills";
 import TagList from "./TagList";
-
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -10,7 +10,7 @@ const Skills = () => {
       <div className={styles.inner}>
         <h1>Skills</h1>
         <div>
-          <TagList items={skills} keyName={'items'}/>
+          <TagList items={skills} keyName={"items"} />
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@
   overflow: hidden;
  
 }
-.container:before {
+/* .container:before {
   display: block;
   content: '';
   position: absolute;
@@ -19,7 +19,7 @@
   width: 22vw;
   transform: translateX(-50%);
   background-color: #393939;
-}
+} */
 
 
 

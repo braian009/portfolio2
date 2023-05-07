@@ -12,9 +12,18 @@
   margin: 0 auto;
   overflow: hidden;
   background-color: #101319;
+}
 
-
-
+.tagsContainer:before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 1px;
+  transform: translateY(-50%);
+  height: 100%;
+  left: 0;
+  content: '';
+  background-color: var(--green-primary);
 }
 
 
@@ -45,7 +54,7 @@
     background-color: var(--green-primary);
   } */
 
-.tagContainer:before {
+/* .tagContainer:before {
   display: block;
   content: "";
   position: absolute;
@@ -58,7 +67,7 @@
   background-color: var(--green-primary);
   box-shadow: 0 0 13.1544px var(--green-primary),
     0 0 3.7584px var(--green-primary), 0 0 1.8792px var(--green-primary);
-}
+} */
 
 @media (min-width: 35em) {
   .tagContainer {
