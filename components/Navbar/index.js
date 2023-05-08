@@ -15,7 +15,7 @@ const navListVariants = {
     },
   },
   close: {
-    clipPath: "inset(0% 100% 100% 0%)",
+    clipPath: "inset(0% 0% 0% 100%)",
     transition: {
       duration: 0.7,
       type: "spring",
@@ -51,7 +51,20 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const { scrollX } = useScroll();
   return (
-    <nav className={styles.container}>
+    <motion.nav className={styles.container}
+    initial={{ opacity: 0, y: -50 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 75,
+                  duration: 0.6,
+                  delay: 3,
+                },
+              }}
+    >
       <div className={styles.inner}>
         <div className={styles.navLogo}>
           <Logo />
@@ -71,7 +84,7 @@ const Navbar = () => {
           </motion.ul>
         </motion.div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

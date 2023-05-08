@@ -6,6 +6,7 @@
   height: 4.5em;
 
   background-color: hsl(220, 22%, 9%);
+  background: none;
   z-index: 100;
 }
 
@@ -79,7 +80,6 @@
 
   border-left: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
-  border-bottom-left-radius: 22px;
 }
 
 .navMenu ul li {

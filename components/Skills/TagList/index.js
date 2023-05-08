@@ -1,8 +1,7 @@
 import * as React from "react";
 import styles from "./taglist.module.css";
 import { motion } from "framer-motion";
-import LineHorizontal from "./LineHorizontal";
-import LineVertical from "./LineVertical";
+import LineDecoration from "./LineDecoration";
 
 const TagList = ({ items, keyName }) => {
   const listVariants = {
@@ -44,15 +43,7 @@ const TagList = ({ items, keyName }) => {
       whileInView="shown"
       variants={listVariants}
     >
-      <LineVertical
-        side={"left"}
-        width={"1px"}
-        height={"80%"}
-        skew={"0deg"}
-        backgroundColor={"#3aa885"}
-        borderRadius={"0px"}
-        luminescence={true}
-      />
+      
       {items.map((item, i) => {
         return (
           <li key={`${keyName}-${i}`} className={styles.tagContainer}>
@@ -62,13 +53,15 @@ const TagList = ({ items, keyName }) => {
               whileInView="shown"
               variants={lineVariants}
             >
-              <LineHorizontal
+              <LineDecoration
                 height={"2px"}
                 width={"50%"}
                 backgroundColor={"#3aa885"}
-                side={"bottom"}
-                borderRadius={"0"}
+                translateX={'-50%'}
+                bottom={'0'}
+                left={'50%'}
                 skew={"-35deg"}
+                
                 luminescence={true}
               />
             </motion.div>

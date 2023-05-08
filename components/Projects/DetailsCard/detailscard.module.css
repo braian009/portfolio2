@@ -1,7 +1,7 @@
 .detailsCardContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.5em;
 
@@ -52,16 +52,6 @@
   
 }
 
-.list > div:before {
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: -100vw;
-  height: 1px;
-  background-color: var(--blue-primary);
-  width: 100vw;
-}
 
 .list ul {
   padding: .25em 0 .35em 0;

@@ -18,6 +18,8 @@ const Slider = () => {
           objectFit: "cover",
           borderTopLeftRadius: "22px",
           borderTopRightRadius: "22px",
+          borderBottomLeftRadius: "11px",
+          borderBottomRightRadius: "11px"
         }}
       />
       <Arrow side={"left"} onChangeItem={goPreviousProject} />
