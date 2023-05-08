@@ -27,7 +27,7 @@
 .projectsContainer {
   display: grid;
   justify-items: center;
-  grid-template-rows: 45vh 0.5em auto;
+  grid-template-rows: 50vh 0.5em auto;
   gap: 0.5em;
 
   width: 100%;

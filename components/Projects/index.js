@@ -5,6 +5,7 @@ import { ProjectContextProvider } from "@/contexts/ProjectsContext";
 import Slider from "./Slider";
 import Tags from "./Tags";
 import DetailsCard from "./DetailsCard";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -19,15 +20,15 @@ const Projects = () => {
         <h1>Projects</h1>
         <ProjectContextProvider>
           <div className={styles.projectsContainer}>
-            <div style={{ height: "100%", width: "100%" }}>
+            <motion.div initial={{y: 40, opacity: 0}} whileInView={{y: 0, opacity: 1, transition: {delay: 0.4, duration: 1.6, type: 'spring', stiffness: 400, damping: 75}}} style={{ height: "100%", width: "100%" }}>
               <Slider />
-            </div>
-            <div style={{ height: "100%", width: "100%" }}>
+            </motion.div>
+            <motion.div initial={{y: -40, opacity: 0}} whileInView={{y: 0, opacity: 1, transition: {delay: 0.4, duration: 1.6, type: 'spring', stiffness: 400, damping: 75}}} style={{ height: "100%", width: "100%" }}>
               <Tags />
-            </div>
-            <div style={{ height: "100%", width: "100%" }}>
+            </motion.div>
+            <motion.div initial={{x: -40, opacity: 0}} whileInView={{x: 0, opacity: 1, transition: {delay: 0.4, duration: 1.6, type: 'spring', stiffness: 400, damping: 75}}} style={{ height: "100%", width: "100%" }}>
               <DetailsCard />
-            </div>
+            </motion.div>
           </div>
         </ProjectContextProvider>
       </div>

@@ -14,7 +14,7 @@
   background-color: #101319;
 }
 
-.tagsContainer:before {
+/* .tagsContainer:before {
   position: absolute;
   display: block;
   top: 50%;
@@ -24,7 +24,7 @@
   left: 0;
   content: '';
   background-color: var(--green-primary);
-}
+} */
 
 
 

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ProjectsContext } from "@/contexts/ProjectsContext";
 import styles from "./tags.module.css";
+import { motion } from "framer-motion";
 
 const Tags = () => {
   const { projectList, goSpecificProject, currentProject } =
@@ -15,7 +16,7 @@ const Tags = () => {
             className={styles.tagContainer}
             onClick={() => goSpecificProject(i)}
           >
-            {project.name === currentProject.name && <div></div>}
+            {project.name === currentProject.name && <motion.div layoutId="projectTag"></motion.div>}
           </div>
         );
       })}
