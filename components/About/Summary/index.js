@@ -2,6 +2,9 @@ import * as React from "react";
 import styles from "./summary.module.css";
 import { motion } from "framer-motion";
 import LineDecoration from "@/components/Skills/TagList/LineDecoration";
+import StackedItems from "./StackedItems";
+
+const values = ['some value', 'some value', 'some value', 'some value'];
 
 const Summary = () => {
   return (
@@ -24,104 +27,7 @@ const Summary = () => {
           luminescence
         />
       </div>
-      <ul>
-        <motion.li
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 0.4,
-              delay: 0.4,
-              type: "spring",
-              stiffness: 400,
-              damping: 75,
-            },
-          }}
-        >
-          some value
-          <LineDecoration
-            left={"0"}
-            right={"0"}
-            bottom={"0"}
-            height={"2px"}
-            backgroundColor={"#f8f8f8"}
-            luminescence
-          />
-        </motion.li>
-        <motion.li
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 0.4,
-              delay: 0.4,
-              type: "spring",
-              stiffness: 400,
-              damping: 75,
-            },
-          }}
-        >
-          some value
-          <LineDecoration
-            left={"0"}
-            right={"0"}
-            bottom={"0"}
-            height={"2px"}
-            backgroundColor={"#f8f8f8"}
-            luminescence
-          />
-        </motion.li>
-        <motion.li
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 0.4,
-              delay: 0.4,
-              type: "spring",
-              stiffness: 400,
-              damping: 75,
-            },
-          }}
-        >
-          some value
-          <LineDecoration
-            left={"0"}
-            right={"0"}
-            bottom={"0"}
-            height={"2px"}
-            backgroundColor={"#f8f8f8"}
-            luminescence
-          />
-        </motion.li>
-        <motion.li
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 0.4,
-              delay: 0.4,
-              type: "spring",
-              stiffness: 400,
-              damping: 75,
-            },
-          }}
-        >
-          some value
-          <LineDecoration
-            left={"0"}
-            right={"0"}
-            bottom={"0"}
-            height={"2px"}
-            backgroundColor={"#f8f8f8"}
-            luminescence
-          />
-        </motion.li>
-      </ul>
+      <StackedItems items={values}/>
     </div>
   );
 };

@@ -1,0 +1,21 @@
+.stackedItemsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  
+    justify-self: end;
+    position: relative;
+    width: 75%;
+    max-width: 30em;
+    padding-top: 1em;
+  
+    transform: skew(-15deg);
+  }
+  
+  .stackedItemsContainer li {
+    font-size: 0.85rem;
+    position: relative;
+    padding: 0.5em 0.8em;
+    color: var(--white-secondary);
+  }

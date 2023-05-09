@@ -42,22 +42,21 @@ const About = () => {
               width: "100%",
               backgroundImage: `url(/./assets/about/clouds.jpg)`,
 
-              backgroundPosition: 'center',
-              backgroundSize: 'cover',
+              backgroundPosition: "center",
+              backgroundSize: "cover",
             }}
-            initial={{ opacity: 0,  }}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{
-              when: 'beforeChildren',
+              when: "beforeChildren",
               duration: 0.4,
             }}
-
           >
             <motion.div
-              initial={{  opacity: 0, x: 100,  }}
-              animate={{   opacity: 1, x: 0 }}
-              exit={{  opacity: 0, x: 100, }}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 100 }}
               transition={{
                 type: "spring",
                 ease: "easeOut",
@@ -65,7 +64,7 @@ const About = () => {
               }}
               style={{
                 position: "absolute",
-                width: '100%',
+                width: "100%",
                 top: 0,
                 bottom: 0,
               }}
