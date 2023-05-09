@@ -50,7 +50,7 @@ const About = () => {
             exit={{ opacity: 0 }}
             transition={{
               when: 'beforeChildren',
-              duration: 0.3,
+              duration: 0.4,
             }}
 
           >

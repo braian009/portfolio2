@@ -3,9 +3,11 @@ import styles from "./navbar.module.css";
 import Logo from "./Logo";
 import BurgerIcon from "./BurgerIcon";
 import { motion, useScroll } from "framer-motion";
+import LineDecoration from "../Skills/TagList/LineDecoration";
 
 const navListVariants = {
   open: {
+    opacity: 1,
     clipPath: "inset(0% 0% 0% 0%)",
     transition: {
       duration: 0.7,
@@ -15,6 +17,7 @@ const navListVariants = {
     },
   },
   close: {
+    opacity: 0,
     clipPath: "inset(0% 0% 0% 100%)",
     transition: {
       duration: 0.7,
@@ -51,19 +54,21 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const { scrollX } = useScroll();
   return (
-    <motion.nav className={styles.container}
-    initial={{ opacity: 0, y: -50 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: {
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 75,
-                  duration: 0.6,
-                  delay: 3,
-                },
-              }}
+    <motion.nav
+      className={styles.container}
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "spring",
+          stiffness: 400,
+          damping: 75,
+          duration: 0.6,
+          delay: 2.4,
+        },
+      }}
+      viewport={{ once: "true" }}
     >
       <div className={styles.inner}>
         <div className={styles.navLogo}>
@@ -77,10 +82,67 @@ const Navbar = () => {
             <BurgerIcon />
           </button>
           <motion.ul variants={navListVariants}>
-            <motion.li variants={navItemVariants}>About</motion.li>
-            <motion.li variants={navItemVariants}>Skills</motion.li>
-            <motion.li variants={navItemVariants}>Projects</motion.li>
-            <motion.li variants={navItemVariants}>Contact</motion.li>
+            <motion.li variants={navItemVariants}>
+              About
+              <LineDecoration
+                top={"50%"}
+                right={"0"}
+                height={"50%"}
+                translateY={"-50%"}
+                width={"1px"}
+                backgroundColor={"#3aa885"}
+                skew={"15deg"}
+                luminescence
+              />
+            </motion.li>
+
+            <motion.li variants={navItemVariants}>
+              Skills
+              <LineDecoration
+                top={"50%"}
+                right={"0"}
+                height={"50%"}
+                translateY={"-50%"}
+                width={"1px"}
+                backgroundColor={"#3aa885"}
+                skew={"15deg"}
+                luminescence
+              />
+            </motion.li>
+            <motion.li variants={navItemVariants}>
+              Projects
+              <LineDecoration
+                top={"50%"}
+                right={"0"}
+                height={"50%"}
+                translateY={"-50%"}
+                width={"1px"}
+                backgroundColor={"#3aa885"}
+                skew={"15deg"}
+                luminescence
+              />
+            </motion.li>
+            <motion.li variants={navItemVariants}>
+              Contact
+              <LineDecoration
+                top={"50%"}
+                right={"0"}
+                height={"50%"}
+                translateY={"-50%"}
+                width={"1px"}
+                backgroundColor={"#3aa885"}
+                skew={"15deg"}
+                luminescence
+              />
+            </motion.li>
+            <LineDecoration
+              top={"0"}
+              left={"0"}
+              height={"100%"}
+              width={"1px"}
+              backgroundColor={"#3aa885"}
+              luminescence
+            />
           </motion.ul>
         </motion.div>
       </div>

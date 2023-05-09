@@ -76,10 +76,8 @@
 
   padding: 2em 0;
   transform: translateY(calc(100% + 1em)) translateX(2.5em) skewX(15deg);
-  background-color: hsl(220, 22%, 9%);
+  background-color: hsla(220, 32%, 9%);
 
-  border-left: 1px solid #bfbfbf;
-  border-bottom: 1px solid #bfbfbf;
 }
 
 .navMenu ul li {
@@ -94,18 +92,6 @@
   cursor: pointer;
 }
 
-.navMenu ul li::before {
-  display: block;
-  content: "";
-  position: absolute;
-  right: 3em;
-  top: 50%;
-
-  height: 50%;
-  transform: translateY(-50%) skewX(15deg);
-  background-color: #bfbfbf;
-  width: 1px;
-}
 
 @media (min-width: 35em) {
   .navMenu {
@@ -117,15 +103,16 @@
     position: relative !important;
     bottom: 0;
 
-    transform: none;
+    transform: none !important;
     clip-path: none !important;
-    background: none;
-    width: auto;
+    background: none !important;
+    width: auto !important;
     max-width: 24em;
 
     padding: 0;
-    border: none;
     border-radius: 0;
+    opacity: 1 !important;
+
   }
 
   .navMenu ul li {
@@ -136,9 +123,21 @@
     margin: 0;
   }
 
-  .navMenu ul li::before {
+  .navMenu ul > div {
     display: none;
   }
+
+  .navMenu ul li > div {
+    left: 50% !important;
+    top: initial !important;
+    width: 75% !important;
+    bottom: 0 !important;
+    height: 1px !important;
+    transform: skew(0) translateX(-50%) translateY(0) !important;
+    
+  }
+
+ 
   .navMenu button {
     display: none;
   }

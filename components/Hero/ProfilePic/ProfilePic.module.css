@@ -1,0 +1,29 @@
+.picture {
+  position: relative;
+  grid-column: 1 / 4;
+  justify-self: start;
+  align-self: end;
+
+  height: 11em;
+  width: 11em;
+
+  margin-left: 1em;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+.picture img {
+  object-fit: cover;
+  border-radius: 22px;
+  opacity: 0.3;
+}
+
+@media (min-width: 35em) {
+  .picture {
+    grid-column: 1 / 2;
+    justify-self: end;
+    align-self: start;
+  }
+}

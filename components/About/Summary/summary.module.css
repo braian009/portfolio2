@@ -15,9 +15,9 @@
   width: 100%;
   max-width: 35em;
   padding: 2em;
+  position: relative;
 
   background-color: #101319;
-  border-left: 4px solid white;
   transform: skew(-15deg);
   transform-origin: bottom;
 }
@@ -55,7 +55,7 @@
   color: var(--white-secondary);
 }
 
-.summaryContainer ul li:before {
+/* .summaryContainer ul li:before {
   display: block;
   content: "";
   position: absolute;
@@ -100,7 +100,7 @@
   background-color: #101319;
 
   opacity: 0.7;
-}
+} */
 
 @media (min-width: 30em) {
   .summaryContainer > div {

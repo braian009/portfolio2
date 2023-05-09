@@ -24,7 +24,7 @@ const LineDecoration = ({
         right: `${right ? right : "none"}`,
         bottom: `${bottom ? bottom : "none"}`,
         left: `${left ? left : "none"}`,
-        backgroundColor: backgroundColor,
+        background: `${backgroundColor}`,
         transform: `skew(${skew ? skew : 0}) translateX(${
           translateX ? translateX : 0
         }) translateY(${translateY ? translateY : 0})`,

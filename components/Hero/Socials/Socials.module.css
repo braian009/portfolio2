@@ -1,0 +1,21 @@
+.socials {
+  grid-column: 2 / 5;
+  justify-self: end;
+
+  display: flex;
+  gap: 0.5em;
+  padding: 0.5em;
+  padding-right: 1em;
+  margin-top: 1.5em;
+}
+
+.socials div {
+  display: grid;
+  place-items: center;
+
+  width: 3em;
+  height: 3em;
+
+  border-radius: 50%;
+  border: 1px solid white;
+}
