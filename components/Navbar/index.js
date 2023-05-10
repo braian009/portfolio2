@@ -1,27 +1,31 @@
 import * as React from "react";
 import styles from "./navbar.module.css";
 import Logo from "./Logo";
-import BurgerIcon from "./BurgerIcon";
+import BurgerIcon from "./NavIcon";
 import { motion, useScroll } from "framer-motion";
-import LineDecoration from "../Skills/TagList/LineDecoration";
+import LineDecoration from "../Varied/LineDecoration";
 
 const navListVariants = {
   open: {
     opacity: 1,
     clipPath: "inset(0% 0% 0% 0%)",
     transition: {
-      duration: 0.7,
+      duration: 0.4,
       staggerChildren: 0.07,
       delayChildren: 0.2,
       type: "spring",
+      stiffness: 400,
+      damping: 75,
     },
   },
   close: {
     opacity: 0,
     clipPath: "inset(0% 0% 0% 100%)",
     transition: {
-      duration: 0.7,
+      duration: 0.4,
       type: "spring",
+      stiffness: 400,
+      damping: 75,
     },
   },
 };
@@ -90,7 +94,7 @@ const Navbar = () => {
                 height={"50%"}
                 translateY={"-50%"}
                 width={"1px"}
-                backgroundColor={"#3aa885"}
+                backgroundColor={"#393939"}
                 skew={"15deg"}
                 luminescence
               />

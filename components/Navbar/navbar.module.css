@@ -92,6 +92,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 420px) {
+  .navMenu ul {
+    width: 180%;
+  }
+}
+
 
 @media (min-width: 35em) {
   .navMenu {

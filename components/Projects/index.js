@@ -20,13 +20,55 @@ const Projects = () => {
         <h1>Projects</h1>
         <ProjectContextProvider>
           <div className={styles.projectsContainer}>
-            <motion.div initial={{y: 40, opacity: 0}} whileInView={{y: 0, opacity: 1, transition: {delay: 0.4, duration: 1.6, type: 'spring', stiffness: 400, damping: 75}}} style={{ height: "100%", width: "100%" }}>
+            <motion.div
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: {
+                  delay: 0.4,
+                  duration: 1.6,
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 75,
+                },
+              }}
+              style={{ height: "100%", width: "100%" }}
+            >
               <Slider />
             </motion.div>
-            <motion.div initial={{y: -40, opacity: 0}} whileInView={{y: 0, opacity: 1, transition: {delay: 0.4, duration: 1.6, type: 'spring', stiffness: 400, damping: 75}}} style={{ height: "100%", width: "100%" }}>
+            <motion.div
+              initial={{ y: -40, opacity: 0 }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: {
+                  delay: 0.4,
+                  duration: 1.6,
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 75,
+                },
+              }}
+              style={{ width: "100%" }}
+            >
               <Tags />
             </motion.div>
-            <motion.div initial={{x: -40, opacity: 0}} whileInView={{x: 0, opacity: 1, transition: {delay: 0.4, duration: 1.6, type: 'spring', stiffness: 400, damping: 75}}} style={{ height: "100%", width: "100%" }}>
+            <motion.div
+              initial={{ x: -40, opacity: 0 }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  delay: 0.4,
+                  duration: 1.6,
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 75,
+                },
+              }}
+              style={{ height: "100%", width: "100%" }}
+            >
               <DetailsCard />
             </motion.div>
           </div>

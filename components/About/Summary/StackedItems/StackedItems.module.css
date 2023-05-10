@@ -14,7 +14,7 @@
   }
   
   .stackedItemsContainer li {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     position: relative;
     padding: 0.5em 0.8em;
     color: var(--white-secondary);

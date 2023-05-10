@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { motion } from "framer-motion";
-import LineDecoration from "@/components/Skills/TagList/LineDecoration";
+import LineDecoration from "@/components/Varied/LineDecoration";
 
 import styles from "./Card.module.css";
 

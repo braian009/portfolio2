@@ -1,7 +1,7 @@
 import * as React from "react";
-import styles from "./taglist.module.css";
+import styles from "./TagLis.module.css";
 import { motion } from "framer-motion";
-import LineDecoration from "./LineDecoration";
+import LineDecoration from "../../Varied/LineDecoration";
 
 const TagList = ({ items, keyName }) => {
   const listVariants = {
@@ -56,7 +56,7 @@ const TagList = ({ items, keyName }) => {
               <LineDecoration
                 height={"2px"}
                 width={"50%"}
-                backgroundColor={"#3aa885"}
+                backgroundColor={"#398197"}
                 translateX={'-50%'}
                 bottom={'0'}
                 left={'50%'}

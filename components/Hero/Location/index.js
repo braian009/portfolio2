@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import LineDecoration from "@/components/Skills/TagList/LineDecoration";
+import LineDecoration from "@/components/Varied/LineDecoration";
 import { motion } from "framer-motion";
 
 import styles from './Location.module.css';
@@ -28,7 +28,7 @@ const Location = () => {
         height={"1px"}
         bottom={"0"}
         left={"0"}
-        backgroundColor={"#3aa885"}
+        backgroundColor={"#398197"}
         luminescence
       />
     </motion.div>

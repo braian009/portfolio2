@@ -14,12 +14,15 @@
   justify-self: end;
   width: 100%;
   max-width: 35em;
-  padding: 2em;
+  padding: 1.5em;
+  padding-left: 2em;
   position: relative;
 
   background-color: #101319;
   transform: skew(-15deg);
   transform-origin: bottom;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
 }
 
 .summaryContainer h4 {
@@ -29,7 +32,7 @@
 }
 
 .summaryContainer p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   max-width: 30em;
 }
 

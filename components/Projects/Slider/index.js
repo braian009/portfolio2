@@ -1,8 +1,10 @@
 import * as React from "react";
+
 import Image from "next/image";
+import Arrow from "./Arrow";
+
+import styles from "./Slider.module.css";
 import { ProjectsContext } from "@/contexts/ProjectsContext";
-import Arrow from "../Arrow";
-import styles from "./slider.module.css";
 
 const Slider = () => {
   const { currentProject, goPreviousProject, goNextProject } =
@@ -19,7 +21,7 @@ const Slider = () => {
           borderTopLeftRadius: "22px",
           borderTopRightRadius: "22px",
           borderBottomLeftRadius: "11px",
-          borderBottomRightRadius: "11px"
+          borderBottomRightRadius: "11px",
         }}
       />
       <Arrow side={"left"} onChangeItem={goPreviousProject} />

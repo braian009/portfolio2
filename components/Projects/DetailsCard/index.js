@@ -2,11 +2,10 @@ import * as React from "react";
 import { ProjectsContext } from "@/contexts/ProjectsContext";
 import styles from "./detailscard.module.css";
 import { motion } from "framer-motion";
-import LineDecoration from "@/components/Skills/TagList/LineDecoration";
+import LineDecoration from "@/components/Varied/LineDecoration";
 
 const DetailsCard = () => {
   const { currentProject } = React.useContext(ProjectsContext);
-  
 
   return (
     <div className={styles.detailsCardContainer}>
@@ -15,9 +14,33 @@ const DetailsCard = () => {
         <p>{currentProject.description}</p>
       </div>
       <div>
-        <div className={styles.list}>
+        <div className={styles.footer}>
           <div>
-            <LineDecoration height={'1px'} width={'100vw'} right={'-100vw'} backgroundColor={'#398187'} bottom={'0'}/>
+            <button>
+              Code
+              <LineDecoration
+                left={"0"}
+                top={"0"}
+                height={"50%"}
+                width={"2px"}
+                translateY={"50%"}
+                luminescence
+                backgroundColor={"#398197"}
+              />
+            </button>
+            <button>
+              Repo
+              <LineDecoration
+                left={"0"}
+                top={"0"}
+                height={"50%"}
+                width={"2px"}
+                translateY={"50%"}
+                luminescence
+                backgroundColor={"#398197"}
+              />
+            </button>
+            
           </div>
           <ul>
             {currentProject.technologies.map((tech, i) => {

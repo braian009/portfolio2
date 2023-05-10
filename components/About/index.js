@@ -49,28 +49,10 @@ const About = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{
-              when: "beforeChildren",
               duration: 0.4,
             }}
           >
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 100 }}
-              transition={{
-                type: "spring",
-                ease: "easeOut",
-                duration: 0.4,
-              }}
-              style={{
-                position: "absolute",
-                width: "100%",
-                top: 0,
-                bottom: 0,
-              }}
-            >
-              <Summary />
-            </motion.div>
+            <Summary />
           </motion.div>
         )}
       </AnimatePresence>

@@ -2,7 +2,6 @@ import * as React from "react";
 import styles from "./skills.module.css";
 import skills from "@/data/skills";
 import TagList from "./TagList";
-import { motion } from "framer-motion";
 
 const Skills = () => {
   return (

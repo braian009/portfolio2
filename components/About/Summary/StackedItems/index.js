@@ -1,7 +1,7 @@
 import React from "react";
 
 import { motion } from "framer-motion";
-import LineDecoration from "@/components/Skills/TagList/LineDecoration";
+import LineDecoration from "@/components/Varied/LineDecoration";
 import styles from "./StackedItems.module.css";
 
 const StackedItems = ({ items }) => {
@@ -17,7 +17,7 @@ const StackedItems = ({ items }) => {
               x: 0,
               transition: {
                 duration: 0.4,
-                delay: 0.4,
+                delay: 1,
                 type: "spring",
                 stiffness: 400,
                 damping: 75,
@@ -29,7 +29,7 @@ const StackedItems = ({ items }) => {
               left={"0"}
               right={"0"}
               bottom={"0"}
-              height={"2px"}
+              height={"1px"}
               backgroundColor={"#f8f8f8"}
               luminescence
             />
