@@ -1,8 +1,11 @@
 import * as React from "react";
 
 import { motion } from "framer-motion";
+import LinkedinIcon from "@/components/Varied/LinkedinIcon";
+import GithubIcon from "@/components/Varied/GithubIcon";
+import LineDecoration from "@/components/Varied/LineDecoration";
 
-import styles from './Socials.module.css';
+import styles from "./Socials.module.css";
 
 const Socials = () => {
   return (
@@ -21,10 +24,13 @@ const Socials = () => {
         },
       }}
     >
-      <div>4</div>
-      <div>4</div>
-      <div>4</div>
-    </motion.div>
+      <div>
+        <LinkedinIcon />
+      </div>
+      <div>
+        <GithubIcon />
+      </div>
+          </motion.div>
   );
 };
 

@@ -37,7 +37,7 @@ const content = [
   },
 ];
 
-const Cards = ({ onChangeCard }) => {
+const Cards = ({ activeCard, onChangeCard }) => {
   return (
     <motion.div
       className={styles.cardsContainer}
@@ -50,6 +50,7 @@ const Cards = ({ onChangeCard }) => {
           <Card
             id={i}
             key={`aboutCard${i}`}
+            activeCard={activeCard}
             title={card.title}
             description={card.description}
             onChangeCard={onChangeCard}

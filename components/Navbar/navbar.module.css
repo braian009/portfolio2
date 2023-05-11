@@ -8,6 +8,7 @@
   background-color: hsl(220, 22%, 9%);
   background: none;
   z-index: 100;
+  border-bottom: 1px solid #393939;
 }
 
 .inner {
@@ -62,7 +63,7 @@
 }
 
 .navMenu button svg path {
-  fill: #f8f8f8;
+  fill: #bfd7de;
 }
 
 .navMenu ul {
@@ -71,13 +72,18 @@
   align-items: flex-start;
 
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   width: 130%;
 
   padding: 2em 0;
   transform: translateY(calc(100% + 1em)) translateX(2.5em) skewX(15deg);
-  background-color: hsla(220, 32%, 9%);
+  background-color: #10151e;
+  border-bottom-left-radius: 22px;
+  background: linear-gradient(to bottom, #0b1016, #10151e);
+  border-bottom: 1px solid #393939;
+  border-left: 1px solid #393939;
 
+  overflow: hidden;
 }
 
 .navMenu ul li {
@@ -90,6 +96,7 @@
   transform: skew(-15deg) !important;
   text-align: left !important;
   cursor: pointer;
+  color: hsl(194, 32%, 86%);
 }
 
 @media (max-width: 420px) {
@@ -98,8 +105,10 @@
   }
 }
 
-
 @media (min-width: 35em) {
+  .container {
+    border: none;
+  }
   .navMenu {
     width: auto;
   }
@@ -118,7 +127,7 @@
     padding: 0;
     border-radius: 0;
     opacity: 1 !important;
-
+    border: none !important;
   }
 
   .navMenu ul li {
@@ -131,6 +140,11 @@
 
   .navMenu ul > div {
     display: none;
+    
+  }
+
+  .navMenu ul > li > div {
+    display: none;
   }
 
   .navMenu ul li > div {
@@ -140,10 +154,8 @@
     bottom: 0 !important;
     height: 1px !important;
     transform: skew(0) translateX(-50%) translateY(0) !important;
-    
   }
 
- 
   .navMenu button {
     display: none;
   }

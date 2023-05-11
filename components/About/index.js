@@ -5,6 +5,7 @@ import Cards from "./Cards";
 import Summary from "./Summary";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
+import InfoIcon from "../Varied/InfoIcon";
 
 const About = () => {
   const [active, setActive] = React.useState(0);
@@ -24,13 +25,13 @@ const About = () => {
       />
       <div className={styles.aboutInner}>
         <h1>About</h1>
-        <button
+        <button 
           className={styles.toggleButton}
           onClick={() => setSummaryActive(!summaryActive)}
         >
-          H
+          <InfoIcon/>
         </button>
-        <Cards onChangeCard={onChangeCard} />
+        <Cards activeCard={active} onChangeCard={onChangeCard} />
       </div>
       <AnimatePresence>
         {summaryActive && (

@@ -30,7 +30,7 @@ const StackedItems = ({ items }) => {
               right={"0"}
               bottom={"0"}
               height={"1px"}
-              backgroundColor={"#f8f8f8"}
+              backgroundColor={"#bfd7de"}
               luminescence
             />
           </motion.li>

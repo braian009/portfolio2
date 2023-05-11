@@ -24,15 +24,28 @@
 
 .toggleButton {
   border-radius: 50%;
-  background-color: white;
   color: black;
-  width: 2em;
-  height: 2em;
+  width: 2.75em;
+  height: 2.75em;
   position: absolute;
+  display: grid;
+  place-items: center;
   top: 1em;
   transform: translateY(50%);
   right: 1.5em;
   z-index: 100;
+  cursor: pointer;
+
+  outline: border;
+}
+
+
+.toggleButton svg {
+  width: 130%;
+  height: 130%;
+  fill: white;
+  outline: none;
+
 }
 
 

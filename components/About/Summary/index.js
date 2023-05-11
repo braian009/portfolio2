@@ -37,7 +37,13 @@ const Summary = () => {
           et qui. Non qui velit consequat sit aute nulla elit qui aute motion.
           exercitation et qui.
         </p>
-        
+        <LineDecoration
+          width={"8px"}
+          height={"100%"}
+          bottom={'0'}
+          backgroundColor={"#101319"}
+          left={"-12px"}
+        />
       </div>
       <StackedItems items={values} />
     </motion.div>

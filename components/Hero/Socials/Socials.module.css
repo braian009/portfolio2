@@ -3,10 +3,12 @@
   justify-self: end;
 
   display: flex;
+  position: relative;
   gap: 0.5em;
   padding: 0.5em;
   padding-right: 1em;
   margin-top: 1.5em;
+
 }
 
 .socials div {
@@ -17,5 +19,14 @@
   height: 3em;
 
   border-radius: 50%;
-  border: 1px solid white;
+}
+
+.socials div svg {
+  width: 100%;
+  height: 100%;
+  fill: hsl(194, 32%, 61%);
+}
+
+.socials div g {
+  fill: hsl(194, 32%, 61%)
 }

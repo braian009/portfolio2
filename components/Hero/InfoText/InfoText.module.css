@@ -16,16 +16,19 @@
   gap: 0.3em;
 }
 
-.infoText .name h1:nth-child(2) {
-  color: #243e46;
-}
-
 .infoText h1 {
   font-size: 3rem;
   line-height: 0.8;
 
   position: relative;
+  color: var(--white-secondary)
 }
+
+.infoText .name h1:nth-child(2) {
+  color: hsl(194, 32%, 36%);
+}
+
+
 
 .infoText h4 {
   font-size: 0.9rem;

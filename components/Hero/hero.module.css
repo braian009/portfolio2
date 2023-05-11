@@ -4,11 +4,7 @@
   position: relative;
   overflow-x: hidden;
   padding-top: 4.5em;
-  background-image: linear-gradient(
-    to bottom,
-    hsl(220, 44%, 8%),
-    hsl(220, 22%, 8%)
-  );
+  background-image: linear-gradient(to bottom, #0b1016 10%, #10151e);
 }
 
 .inner {

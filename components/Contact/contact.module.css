@@ -1,34 +1,35 @@
 .container {
-    min-height: 50vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(#10151e, #0b1016);
 }
 
 .inner {
-    width: 100%;
-    max-width: 1080px;
-    padding: 2em 0.5em;
+  width: 100%;
+  max-width: 1080px;
+  padding: 2em 0.5em;
 }
 
 .socialsContainer {
-    display: grid;
-    place-content: center;
-    height: 11em;
+  display: grid;
+  place-content: center;
+  height: 11em;
 }
 
 .socialsContainer ul {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
 .socialsContainer ul li {
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    border: 1px solid white;
-    display: grid;
-    place-items: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: grid;
+  place-items: center;
 }

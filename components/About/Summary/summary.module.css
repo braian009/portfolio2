@@ -12,7 +12,7 @@
 
 .summaryContainer > div {
   justify-self: end;
-  width: 100%;
+  width: 95%;
   max-width: 35em;
   padding: 1.5em;
   padding-left: 2em;
@@ -21,8 +21,7 @@
   background-color: #101319;
   transform: skew(-15deg);
   transform-origin: bottom;
-  border-top-left-radius: 22px;
-  border-bottom-left-radius: 22px;
+  /* border-bottom-left-radius: 11px; */
 }
 
 .summaryContainer h4 {

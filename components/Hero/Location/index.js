@@ -28,7 +28,7 @@ const Location = () => {
         height={"1px"}
         bottom={"0"}
         left={"0"}
-        backgroundColor={"#398197"}
+        backgroundColor={"#bfd7de"}
         luminescence
       />
     </motion.div>

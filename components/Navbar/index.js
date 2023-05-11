@@ -56,7 +56,7 @@ const navItemVariants = {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const { scrollX } = useScroll();
+
   return (
     <motion.nav
       className={styles.container}
@@ -89,13 +89,12 @@ const Navbar = () => {
             <motion.li variants={navItemVariants}>
               About
               <LineDecoration
+                width={"100vw"}
+                height={"1px"}
                 top={"50%"}
-                right={"0"}
-                height={"50%"}
                 translateY={"-50%"}
-                width={"1px"}
-                backgroundColor={"#393939"}
-                skew={"15deg"}
+                backgroundColor={"white"}
+                right={"-100vw"}
                 luminescence
               />
             </motion.li>
@@ -103,50 +102,40 @@ const Navbar = () => {
             <motion.li variants={navItemVariants}>
               Skills
               <LineDecoration
+                width={"100vw"}
+                height={"1px"}
                 top={"50%"}
-                right={"0"}
-                height={"50%"}
                 translateY={"-50%"}
-                width={"1px"}
-                backgroundColor={"#3aa885"}
-                skew={"15deg"}
+                backgroundColor={"white"}
+                right={"-100vw"}
                 luminescence
               />
             </motion.li>
             <motion.li variants={navItemVariants}>
               Projects
               <LineDecoration
+                width={"100vw"}
+                height={"1px"}
                 top={"50%"}
-                right={"0"}
-                height={"50%"}
                 translateY={"-50%"}
-                width={"1px"}
-                backgroundColor={"#3aa885"}
-                skew={"15deg"}
+                backgroundColor={"white"}
+                right={"-100vw"}
                 luminescence
               />
             </motion.li>
             <motion.li variants={navItemVariants}>
               Contact
               <LineDecoration
+                width={"100vw"}
+                height={"1px"}
                 top={"50%"}
-                right={"0"}
-                height={"50%"}
                 translateY={"-50%"}
-                width={"1px"}
-                backgroundColor={"#3aa885"}
-                skew={"15deg"}
+                backgroundColor={"white"}
+                right={"-100vw"}
                 luminescence
               />
             </motion.li>
-            <LineDecoration
-              top={"0"}
-              left={"0"}
-              height={"100%"}
-              width={"1px"}
-              backgroundColor={"#3aa885"}
-              luminescence
-            />
+            
           </motion.ul>
         </motion.div>
       </div>

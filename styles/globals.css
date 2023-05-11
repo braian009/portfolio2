@@ -19,7 +19,7 @@ body {
   height: 100%;
   line-height: 1.1;
 
-  background-color: #101319;
+  background-color: #0d141c;
   overflow-x: hidden;
 }
 
@@ -63,4 +63,5 @@ ul {
 button {
   background: none;
   border: none;
+  outline: none;
 }

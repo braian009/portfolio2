@@ -7,6 +7,10 @@
   width: 100%;
   min-height: 60vh;
   overflow: hidden;
+  background-color: #0b1016;
+  background-image: radial-gradient( #10151e, #0b1016 );
+
+  
 }
 
 .inner {
