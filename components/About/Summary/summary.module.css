@@ -21,7 +21,7 @@
   background-color: #101319;
   transform: skew(-15deg);
   transform-origin: bottom;
-  /* border-bottom-left-radius: 11px; */
+  border: 1px solid hsl(194, 45%, 21%);
 }
 
 .summaryContainer h4 {
@@ -34,8 +34,6 @@
   font-size: 0.8rem;
   max-width: 30em;
 }
-
-
 
 @media (min-width: 30em) {
   .summaryContainer > div {

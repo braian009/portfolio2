@@ -1,7 +1,9 @@
 .location {
   position: relative;
   font-size: 0.8rem;
-  grid-column: 1 / 5;
+  grid-column: 2 / 5;
+  justify-self: start;
+  width: 100%;
 
   margin-top: 1em;
   padding: 0.3em 0.5em;
@@ -10,8 +12,9 @@
 @media (min-width: 35em) {
   .location {
     font-size: 0.9rem;
-    grid-column: span 1;
+    grid-column: span 4;
     grid-row: 3 / 4;
+    
     justify-self: start;
     margin-top: 1em;
   }

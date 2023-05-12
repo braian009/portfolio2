@@ -12,8 +12,7 @@ const InfoIcon = () => {
       }}
       transition={{
         type: "spring",
-        ease: "easeOut",
-        duration: 0.3,
+        duration: 0.4,
       }}
       fill="#000000"
       width="800px"

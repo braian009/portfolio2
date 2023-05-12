@@ -40,7 +40,6 @@ const DetailsCard = () => {
                 backgroundColor={"#398197"}
               />
             </button>
-            
           </div>
           <ul>
             {currentProject.technologies.map((tech, i) => {
@@ -49,6 +48,14 @@ const DetailsCard = () => {
           </ul>
         </div>
       </div>
+      <LineDecoration
+        width={"100%"}
+        height={"1px"}
+        bottom={"0"}
+        left={"0"}
+        backgroundColor={"#bfd7de"}
+        luminescence
+      />
     </div>
   );
 };

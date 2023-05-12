@@ -38,11 +38,11 @@ const Summary = () => {
           exercitation et qui.
         </p>
         <LineDecoration
-          width={"8px"}
+          width={"4px"}
           height={"100%"}
-          bottom={'0'}
-          backgroundColor={"#101319"}
-          left={"-12px"}
+          bottom={"0"}
+          backgroundColor={"hsl(194, 45%, 21%)"}
+          left={"-8px"}
         />
       </div>
       <StackedItems items={values} />

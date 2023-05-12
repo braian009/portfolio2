@@ -38,7 +38,7 @@ const Card = ({ id, title, description, activeCard, onChangeCard }) => {
                 initial={false}
                 layoutId="cardTag"
                 exit={{opacity: 0}}
-                animate={{
+                whileInView={{
                   opacity: [0, 1],
                   transition: {
                     duration: 0.8,
@@ -48,10 +48,11 @@ const Card = ({ id, title, description, activeCard, onChangeCard }) => {
                 }}
               >
                 <LineDecoration
-                  width={"4px"}
-                  height={"105%"}
-                  bottom={"0"}
+                  width={"2px"}
+                  height={"95%"}
+                  top={"50%"}
                   backgroundColor={"#398197"}
+                  translateY={'-50%'}
                   left={"-8px"}
                   luminescence
                 />

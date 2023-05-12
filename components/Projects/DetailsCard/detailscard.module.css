@@ -5,9 +5,11 @@
   align-items: center;
   gap: 0.25em;
 
+  position: relative;
   width: 100%;
   max-width: 40em;
   padding-top: 0.25em;
+  padding-bottom: 0.5em;
 
   margin: 0 auto;
 }
@@ -51,9 +53,6 @@
   transform: skew(15deg);
   align-self: stretch;
   padding: 0 0.75em;
-  border-bottom: 1px solid #bfd7de;
-  border-left: 1px solid #bfd7de;
-  border-bottom-left-radius: 11px;
 }
 
 .footer > div button {

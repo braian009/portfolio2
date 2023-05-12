@@ -14,6 +14,7 @@
   padding: 2em 0.5em;
 }
 
+
 .socialsContainer {
   display: grid;
   place-content: center;
@@ -22,14 +23,35 @@
 
 .socialsContainer ul {
   display: flex;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .socialsContainer ul li {
   width: 3em;
   height: 3em;
   border-radius: 50%;
-  border: 1px solid white;
   display: grid;
   place-items: center;
+
+}
+
+.socialsContainer ul li svg {
+  width: 100%;
+  height: 100%;
+  fill: #7cadbb;
+}
+
+.socialsContainer ul li svg path {
+  fill: inherit;
+}
+
+.socialsContainer ul li svg g {
+  fill: inherit;
+}
+
+.socialsContainer ul li button{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
 }
