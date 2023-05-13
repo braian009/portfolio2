@@ -59,7 +59,7 @@
   line-height: 1;
   max-width: 15em;
   color: var(--white-secondary);
-  margin-top: 0.75em;
+  margin-top: 0.5em;
 }
 
 @media (min-width: 35em) {

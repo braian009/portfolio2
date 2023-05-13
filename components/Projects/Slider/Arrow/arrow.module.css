@@ -1,11 +1,10 @@
 .ArrowContainer {
   position: absolute;
-  top: 50%;
+  top: calc(50% - 1.75em);
   width: 3.5em;
   height: 3.5em;
-  border-radius: 0.4em;
+  border: none;
   opacity: 1;
-  transform: translateY(-50%);
   z-index: 100;
 }
 

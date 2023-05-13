@@ -46,7 +46,7 @@
 
 .socialsContainer ul {
   display: flex;
-  gap: 1.5em;
+  gap: 1em;
 }
 
 .socialsContainer ul li {

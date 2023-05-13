@@ -1,12 +1,20 @@
 import * as React from "react";
 import styles from "./arrow.module.css";
+import { motion } from "framer-motion";
 
 const Arrow = ({ side, onChangeItem }) => {
   return (
-    <div
+    <motion.div
       className={styles.ArrowContainer}
       style={{ [side]: "0px" }}
       onClick={onChangeItem}
+      initial="false"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.99 }}
+      transition={{
+        type: "spring",
+        duration: 0.4,
+      }}
     >
       <div>
         {side === "left" ? (
@@ -15,13 +23,11 @@ const Arrow = ({ side, onChangeItem }) => {
           </svg>
         ) : (
           <svg width="800px" height="800px" viewBox="0 0 64 64">
-            <path
-              d="M28.5,60.5a6,6,0,0,1-5.73-7.78l2.94-9.45a2,2,0,0,1,3.82,1.19l-2.94,9.45a2,2,0,0,0,3.82,1.18l7-22.5a2,2,0,0,0,0-1.18l-7-22.5a2,2,0,0,0-3.82,1.18l6.63,21.32a2,2,0,0,1,0,1.18l-.88,2.85a2,2,0,0,1-3.82-1.19l.7-2.25L22.77,11.28A6,6,0,0,1,34.23,7.72l7,22.5a6,6,0,0,1,0,3.56l-7,22.5A6,6,0,0,1,28.5,60.5Z"
-            />
+            <path d="M28.5,60.5a6,6,0,0,1-5.73-7.78l2.94-9.45a2,2,0,0,1,3.82,1.19l-2.94,9.45a2,2,0,0,0,3.82,1.18l7-22.5a2,2,0,0,0,0-1.18l-7-22.5a2,2,0,0,0-3.82,1.18l6.63,21.32a2,2,0,0,1,0,1.18l-.88,2.85a2,2,0,0,1-3.82-1.19l.7-2.25L22.77,11.28A6,6,0,0,1,34.23,7.72l7,22.5a6,6,0,0,1,0,3.56l-7,22.5A6,6,0,0,1,28.5,60.5Z" />
           </svg>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

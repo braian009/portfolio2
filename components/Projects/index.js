@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <div className={styles.container}>
+      
       <Image
         src={`/./assets/projects/codee.jpg`}
         fill

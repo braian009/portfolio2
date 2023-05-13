@@ -4,14 +4,14 @@
 
   display: flex;
   position: relative;
-  gap: 0.5em;
+  gap: 0.75em;
   padding: 0.5em;
   padding-right: 1em;
   margin-top: 1.5em;
 
 }
 
-.socials div {
+.socials li {
   display: grid;
   place-items: center;
 
@@ -21,12 +21,12 @@
   border-radius: 50%;
 }
 
-.socials div svg {
+.socials li svg {
   width: 100%;
   height: 100%;
   fill: #7cadbb;
 }
 
-.socials div g {
+.socials li g {
   fill: hsl(194, 32%, 61%)
 }
