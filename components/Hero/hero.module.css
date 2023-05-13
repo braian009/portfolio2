@@ -3,7 +3,8 @@
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-  padding-top: 4.5em;
+  overflow-y: visible;
+  padding-top: 5em;
   background-image: linear-gradient(to bottom, #0b1016 10%, #10151e);
 }
 

@@ -46,7 +46,7 @@ const TagList = ({ items, keyName }) => {
       
       {items.map((item, i) => {
         return (
-          <li key={`${keyName}-${i}`} className={styles.tagContainer}>
+          <motion.li key={`${keyName}-${i}`} className={styles.tagContainer} whileHover={{color: '#f8f8f8', transition: {duration: 0.8}}} >
             {item}
             <motion.div
               initial="hidden"
@@ -54,9 +54,9 @@ const TagList = ({ items, keyName }) => {
               variants={lineVariants}
             >
               <LineDecoration
-                height={"2px"}
+                height={"1px"}
                 width={"50%"}
-                backgroundColor={"#398197"}
+                backgroundColor={"#3aa885"}
                 translateX={'-50%'}
                 bottom={'0'}
                 left={'50%'}
@@ -65,7 +65,7 @@ const TagList = ({ items, keyName }) => {
                 luminescence={true}
               />
             </motion.div>
-          </li>
+          </motion.li>
         );
       })}
     </motion.ul>

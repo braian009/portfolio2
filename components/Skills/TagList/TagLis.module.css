@@ -16,19 +16,15 @@
 }
 
 .tagContainer {
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   display: grid;
   place-items: center;
   position: relative;
   text-align: center;
+  color: #d4d4d4;
 
   padding: 0.5em 0.8em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   cursor: pointer;
 }
 
-@media (min-width: 35em) {
-  .tagContainer {
-    font-size: 0.65rem;
-  }
-}

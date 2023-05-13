@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 :root {
   box-sizing: border-box;
   font-size: calc(0.8em + 1vw);
-  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
 
   --white-primary: #f8f8f8;
-  --white-secondary: rgb(211, 211, 211);
+  --white-secondary: #c7c7c7;
   --green-primary: #3aa885;
   --blue-primary: #398197;
   overflow-x: hidden;
@@ -41,6 +43,8 @@ h3,
 h4,
 h5,
 h6 {
+  text-transform: uppercase;
+  font-weight: lighter;
   margin: 0;
   line-height: 1;
 }

@@ -3,6 +3,7 @@ import styles from "./navbar.module.css";
 import Logo from "./Logo";
 import BurgerIcon from "./NavIcon";
 import { motion, useScroll } from "framer-motion";
+import BrandIcon from "../Varied/BrandIcon";
 import LineDecoration from "../Varied/LineDecoration";
 
 const navListVariants = {
@@ -76,7 +77,7 @@ const Navbar = () => {
     >
       <div className={styles.inner}>
         <div className={styles.navLogo}>
-          <Logo />
+          <BrandIcon />
         </div>
         <motion.div
           className={styles.navMenu}
@@ -93,7 +94,7 @@ const Navbar = () => {
                 height={"1px"}
                 top={"50%"}
                 translateY={"-50%"}
-                backgroundColor={"white"}
+                backgroundColor={"#3aa885"}
                 right={"-100vw"}
                 luminescence
               />
@@ -106,7 +107,7 @@ const Navbar = () => {
                 height={"1px"}
                 top={"50%"}
                 translateY={"-50%"}
-                backgroundColor={"white"}
+                backgroundColor={"#3aa885"}
                 right={"-100vw"}
                 luminescence
               />
@@ -118,7 +119,7 @@ const Navbar = () => {
                 height={"1px"}
                 top={"50%"}
                 translateY={"-50%"}
-                backgroundColor={"white"}
+                backgroundColor={"#3aa885"}
                 right={"-100vw"}
                 luminescence
               />
@@ -130,7 +131,7 @@ const Navbar = () => {
                 height={"1px"}
                 top={"50%"}
                 translateY={"-50%"}
-                backgroundColor={"white"}
+                backgroundColor={"#3aa885"}
                 right={"-100vw"}
                 luminescence
               />

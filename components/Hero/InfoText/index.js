@@ -68,7 +68,7 @@ const InfoText = () => {
             height={"100%"}
             width={"2px"}
             luminescence
-            backgroundColor={"hsl(194, 32%, 36%)"}
+            backgroundColor={"#2c8c6d"}
           />
         </motion.div>
       </motion.h4>

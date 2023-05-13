@@ -41,7 +41,7 @@ const Summary = () => {
           width={"4px"}
           height={"100%"}
           bottom={"0"}
-          backgroundColor={"hsl(194, 45%, 21%)"}
+          backgroundColor={"#bfd7de"}
           left={"-8px"}
         />
       </div>

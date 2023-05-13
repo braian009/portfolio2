@@ -8,9 +8,7 @@
   min-height: 60vh;
   overflow: hidden;
   background-color: #0b1016;
-  background-image: radial-gradient( #10151e, #0b1016 );
-
-  
+  background-image: radial-gradient(#10151e, #0b1016);
 }
 
 .inner {
@@ -29,5 +27,6 @@
 }
 
 .inner > h1 {
+  font-size: 1.75rem;
   padding-left: 1rem;
 }

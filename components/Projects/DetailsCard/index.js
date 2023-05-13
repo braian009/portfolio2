@@ -16,30 +16,30 @@ const DetailsCard = () => {
       <div>
         <div className={styles.footer}>
           <div>
-            <button>
-              Code
+            <motion.button initial="false" whileHover={{ color: "#ccc" }}>
+              Demo
               <LineDecoration
                 left={"0"}
-                top={"0"}
+                top={"50%"}
                 height={"50%"}
-                width={"2px"}
-                translateY={"50%"}
+                width={"4px"}
+                translateY={"-50%"}
                 luminescence
                 backgroundColor={"#398197"}
               />
-            </button>
-            <button>
+            </motion.button>
+            <motion.button initial="false" whileHover={{ color: "#ccc" }}>
               Repo
               <LineDecoration
                 left={"0"}
-                top={"0"}
+                top={"50%"}
                 height={"50%"}
-                width={"2px"}
-                translateY={"50%"}
+                width={"4px"}
+                translateY={"-50%"}
                 luminescence
                 backgroundColor={"#398197"}
               />
-            </button>
+            </motion.button>
           </div>
           <ul>
             {currentProject.technologies.map((tech, i) => {
@@ -53,8 +53,7 @@ const DetailsCard = () => {
         height={"1px"}
         bottom={"0"}
         left={"0"}
-        backgroundColor={"#bfd7de"}
-        luminescence
+        backgroundColor={"#398197"}
       />
     </div>
   );

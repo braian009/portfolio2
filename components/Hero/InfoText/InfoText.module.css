@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+
+
 .infoText {
   grid-column: 1 / 5;
 
@@ -17,15 +20,20 @@
 }
 
 .infoText h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 0.8;
+  text-transform: capitalize;
+  font-family: 'Saira Condensed';
+  font-style: italic;
+  font-weight: bold;
 
   position: relative;
   color: var(--white-secondary)
 }
 
 .infoText .name h1:nth-child(2) {
-  color: hsl(194, 32%, 36%);
+  color: #3e6b79;
+  /* color: #2c8c6d; */
 }
 
 
@@ -42,7 +50,7 @@
   margin-top: 0.55em;
   color: var(--white-secondary);
   padding: 0.3em 0.5em;
-  padding-left: 1em;
+  padding-left: 0.75em;
   transform: skew(-15deg);
 }
 
