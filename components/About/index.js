@@ -24,12 +24,27 @@ const About = () => {
         style={{ objectFit: "cover", opacity: 0.04 }}
       />
       <div className={styles.aboutInner}>
-        <h1>About</h1>
-        <button 
+        <motion.h1
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { duration: 0.8, stiffness: 400, damping: 75 },
+          }}
+        >
+          About
+        </motion.h1>
+        
+        <button
           className={styles.toggleButton}
           onClick={() => setSummaryActive(!summaryActive)}
+          initial={{ opacity: 0}}
+          whileInView={{
+            opacity: 1,
+            
+          }}
         >
-          <InfoIcon/>
+          <InfoIcon />
         </button>
         <Cards activeCard={active} onChangeCard={onChangeCard} />
       </div>

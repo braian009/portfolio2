@@ -4,6 +4,8 @@ import EnvelopeIcon from "../Varied/EnvelopeIcon";
 import LinkedinIcon from "../Varied/LinkedinIcon";
 import WhatsappIcon from "../Varied/WhatsappIcon";
 import { motion } from "framer-motion";
+import BrandIcon from "../Varied/BrandIcon";
+import LineDecoration from "../Varied/LineDecoration";
 
 const itemVariant = {
   hidden: {
@@ -48,15 +50,43 @@ const Contact = () => {
   };
   return (
     <div className={styles.container}>
+      <BrandIcon />
       <div className={styles.inner}>
-        <h1>Contact me</h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+          transition: {
+            duration: 1.2,
+            delay: 0.4
+          }
+          }}
+        >
+          Contact me
+          <LineDecoration
+            width={"100vw"}
+            height={"1px"}
+            left={"-100vw"}
+            top={"50%"}
+            backgroundColor={"#bfd7de"}
+            luminescence
+          />
+          <LineDecoration
+            width={"100vw"}
+            height={"1px"}
+            right={"-100vw"}
+            top={"50%"}
+            backgroundColor={"#bfd7de"}
+            luminescence
+          />
+        </motion.h1>
         <div className={styles.socialsContainer}>
           <ul>
             <motion.li
               variants={itemVariant}
               whileHover="onHover"
               whileTap="onTap"
-              custom={"0.4"}
+              custom={"1.2"}
               initial="hidden"
               whileInView="shown"
             >
@@ -72,7 +102,7 @@ const Contact = () => {
               variants={itemVariant}
               whileHover="onHover"
               whileTap="onTap"
-              custom={"0.8"}
+              custom={"1.6"}
               initial="hidden"
               whileInView="shown"
             >
@@ -84,7 +114,7 @@ const Contact = () => {
               variants={itemVariant}
               whileHover="onHover"
               whileTap="onTap"
-              custom={"1.2"}
+              custom={"2"}
               initial="hidden"
               whileInView="shown"
             >

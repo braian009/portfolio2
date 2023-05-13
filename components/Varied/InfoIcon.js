@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const InfoIcon = () => {
   return (
     <motion.svg
+      initial={{ opacity: 0 }}
       whileHover={{
         scale: 1.1,
       }}
@@ -13,6 +14,10 @@ const InfoIcon = () => {
       transition={{
         type: "spring",
         duration: 0.4,
+      }}
+      whileInView={{
+        opacity: 1,
+        transition: {delay: 0.4, duration: 0.4}
       }}
       fill="#000000"
       width="800px"

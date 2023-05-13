@@ -12,7 +12,7 @@ const containerVariants = {
   shown: {
     opacity: 1,
     transition: {
-      delay: 0.4,
+      delay: 0.6,
       duration: 1.2,
       type: "spring",
     },

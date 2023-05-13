@@ -17,7 +17,16 @@ const Projects = () => {
         style={{ objectFit: "cover", opacity: 0.05 }}
       />
       <div className={styles.inner}>
-        <h1>Projects</h1>
+        <motion.h1
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { duration: 0.8, stiffness: 400, damping: 75 },
+          }}
+        >
+          Projects
+        </motion.h1>
         <ProjectContextProvider>
           <div className={styles.projectsContainer}>
             <motion.div
@@ -26,7 +35,7 @@ const Projects = () => {
                 y: 0,
                 opacity: 1,
                 transition: {
-                  delay: 0.4,
+                  delay: 0.6,
                   duration: 1.6,
                   type: "spring",
                   stiffness: 400,
@@ -43,7 +52,7 @@ const Projects = () => {
                 y: 0,
                 opacity: 1,
                 transition: {
-                  delay: 0.4,
+                  delay: 0.6,
                   duration: 1.6,
                   type: "spring",
                   stiffness: 400,
@@ -60,7 +69,7 @@ const Projects = () => {
                 x: 0,
                 opacity: 1,
                 transition: {
-                  delay: 0.4,
+                  delay: 0.6,
                   duration: 1.6,
                   type: "spring",
                   stiffness: 400,

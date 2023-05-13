@@ -13,7 +13,7 @@ const TagList = ({ items, keyName }) => {
       opacity: 1,
       x: 0,
       transition: {
-        delay: 0.4,
+        delay: 0.6,
         type: "spring",
         stiffness: 400,
         damping: 75,

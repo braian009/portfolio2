@@ -6,15 +6,34 @@
   align-items: center;
   justify-content: center;
   background-image: radial-gradient(#10151e, #0b1016);
+  padding: 0 1em;
+}
+
+.container > svg {
+  position: absolute;
+  height: 100%;
+}
+
+.container > svg  g {
+  fill: #ddd;
+  opacity: 0.014;
 }
 
 .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 100%;
   max-width: 1080px;
   padding: 2em 0.5em;
+  overflow-x: hidden;
 }
 
 .inner h1 {
+  width: 6em;
+  position: relative;
   font-size: 1.75rem;
   text-align: center;
 }
@@ -22,7 +41,7 @@
 .socialsContainer {
   display: grid;
   place-content: center;
-  height: 8em;
+  height: 7em;
 }
 
 .socialsContainer ul {
