@@ -54,6 +54,7 @@ const DetailsCard = () => {
         bottom={"0"}
         left={"0"}
         backgroundColor={"#398197"}
+        opacity={0.4}
       />
     </div>
   );

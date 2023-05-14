@@ -34,15 +34,10 @@ const About = () => {
         >
           About
         </motion.h1>
-        
+
         <button
           className={styles.toggleButton}
           onClick={() => setSummaryActive(!summaryActive)}
-          initial={{ opacity: 0}}
-          whileInView={{
-            opacity: 1,
-            
-          }}
         >
           <InfoIcon />
         </button>

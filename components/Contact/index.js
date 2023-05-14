@@ -34,7 +34,7 @@ const Contact = () => {
           }}
         >
           Contact me
-          <LineDecoration
+          {/* <LineDecoration
             width={"100vw"}
             height={"1px"}
             left={"-100vw"}
@@ -49,7 +49,7 @@ const Contact = () => {
             top={"50%"}
             backgroundColor={"#bfd7de"}
             luminescence
-          />
+          /> */}
         </motion.h1>
         <div className={styles.socialsContainer}>
           <ul>
