@@ -8,7 +8,8 @@
     position: relative;
     width: 75%;
     max-width: 30em;
-    padding-top: 1em;
+    padding: 1em;
+
   
     transform: skew(-15deg);
   }
@@ -17,5 +18,5 @@
     font-size: 0.8rem;
     position: relative;
     padding: 0.5em 0.8em;
-    color: var(--white-secondary);
+    color: var(--white-primary);
   }

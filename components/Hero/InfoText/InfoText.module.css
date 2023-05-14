@@ -28,12 +28,11 @@
   font-weight: bold;
 
   position: relative;
-  color: var(--white-secondary)
+  color: var(--white-primary)
 }
 
 .infoText .name h1:nth-child(2) {
-  color: #3e6b79;
-  /* color: #2c8c6d; */
+  color: var(--dark-blue);
 }
 
 
@@ -48,10 +47,11 @@
   width: 100%;
   max-width: 15em;
   margin-top: 0.55em;
-  color: var(--white-secondary);
+  color: var(--gray-primary);
   padding: 0.3em 0.5em;
   padding-left: 0.75em;
   transform: skew(-15deg);
+  cursor: default;
 }
 
 .infoText p {

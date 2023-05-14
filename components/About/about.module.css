@@ -6,7 +6,7 @@
   min-height: 60vh;
   width: 100%;
   align-items: center;
-  background-color: #101319;
+  background-color: var(--bg-primary);
 }
 
 .aboutInner {
@@ -24,27 +24,28 @@
 }
 
 .toggleButton {
-  border-radius: 50%;
-  color: black;
-  width: 2.75em;
-  height: 2.75em;
-  position: absolute;
   display: grid;
   place-items: center;
+  border-radius: 50%;
+  color: var(--bg-primary);
+  width: 2.75em;
+  height: 2.75em;
+
+  position: absolute;
   top: 1em;
   transform: translateY(50%);
   right: 1.5em;
   z-index: 100;
   cursor: pointer;
 
-  outline: border;
+  border: none;
 }
 
 
 .toggleButton svg {
   width: 130%;
   height: 130%;
-  fill: #bfd7de;
+  fill: var(--lighter-blue);
   outline: none;
 
 }

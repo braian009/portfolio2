@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "./TagLis.module.css";
+import styles from "./TagList.module.css";
 import { motion } from "framer-motion";
 import LineDecoration from "../../Varied/LineDecoration";
 

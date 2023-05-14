@@ -5,19 +5,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(hsl(219, 30%, 9%), hsl(213, 33%, 6%));
+  background-image: radial-gradient(var(--bg-secondary), var(--bg-primary));
   padding: 0 1em;
+  padding-bottom: 4.5em;
 }
 
 .container > svg {
   position: absolute;
-  top: 0.25em;
+  top: 0.5em;
   height: calc(100% - 4.5em);
 }
 
 .container > svg  g {
-  fill: #ddd;
-  opacity: 0.014;
+  fill: var(--gray-primary);
+  opacity: 0.04;
 }
 
 .inner {
@@ -25,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1em;
   position: relative;
   width: 100%;
   max-width: 1080px;
@@ -42,7 +44,6 @@
 .socialsContainer {
   display: grid;
   place-content: center;
-  height: 7em;
 }
 
 .socialsContainer ul {
@@ -61,7 +62,7 @@
 .socialsContainer ul li svg {
   width: 100%;
   height: 100%;
-  fill: #7cadbb;
+  fill: var(--light-blue);
 }
 
 .socialsContainer ul li svg path {

@@ -5,10 +5,19 @@
   font-size: calc(0.8em + 1vw);
   font-family: "Roboto Condensed", "Helvetica", sans-serif;
 
-  --white-primary: #f8f8f8;
-  --white-secondary: #c7c7c7;
+  --bg-primary: #0a0f14;
+  --bg-secondary: hsl(219, 30%, 9%);
+
+  --gray-primary: #494949;
+  --gray-secondary: #303030;
+  --white-primary: #ccc;
+  --white-secondary: #ababab;
   --green-primary: #3aa885;
-  --blue-primary: #398197;
+  --darker-blue: #0f2329;
+  --dark-blue: hsl(194, 32%, 36%);
+  --mid-blue: hsl(194, 45%, 41%);
+  --light-blue: #7cadbb;
+  --lighter-blue: hsl(194, 32%, 86%); 
   overflow-x: hidden;
 }
 
@@ -23,6 +32,10 @@ body {
 
   background-color: #0d141c;
   overflow-x: hidden;
+}
+
+p {
+  line-height: 0.95;
 }
 
 *,

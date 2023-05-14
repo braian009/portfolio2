@@ -20,7 +20,7 @@
 }
 
 .detailsCardContainer h2 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-transform: uppercase !important;
   letter-spacing: 0.05em;
   font-weight: lighter;
@@ -32,7 +32,7 @@
 .detailsCardContainer p {
   font-size: 0.75rem;
   width: 100%;
-  max-width: 50em;
+  max-width: 40em;
 
   padding: 0.5em;
   color: var(--white-secondary);
@@ -76,9 +76,10 @@
   color: var(--white-secondary);
   display: inline-block;
   padding: 0.25em 0.7em;
-  background-color: hsl(220, 27%, 8%);
-  border: 1px solid #494949;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--gray-secondary);
   border-radius: 11px;
+  cursor: default;
 }
 
 .footer ul li + li {

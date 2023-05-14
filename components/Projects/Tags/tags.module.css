@@ -13,15 +13,16 @@
   height: 0.45em;
   border-radius: 22px;
 
-  border: 1px solid #393939;
+  border: 1px solid var(--gray-secondary);
   transform: skew(-15deg);
+  cursor: pointer;
 }
 
 .tagContainer div {
-  background-color: #398197;
+  background-color: var(--mid-blue);
   width: 100%;
   height: 100%;
   border-radius: 22px;
 
-  box-shadow: 0 0 13.1544px #398197, 0 0 3.7584px #398197, 0 0 1.8792px #398197;
+  box-shadow: 0 0 13.1544px var(--mid-blue), 0 0 3.7584px var(--mid-blue), 0 0 1.8792px var(--mid-blue);
 }

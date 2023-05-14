@@ -13,8 +13,8 @@ const lineVariants = {
   shown: {
     scaleX: 1,
     transition: {
-      delay: 0.9,
-      duration: 1.4,
+      delay: 0.8,
+      duration: 1.8,
     },
   },
 };
@@ -49,7 +49,7 @@ const Card = ({ id, title, description, activeCard, onChangeCard }) => {
               >
                 <LineDecoration
                   width={"2px"}
-                  height={"95%"}
+                  height={"90%"}
                   top={"50%"}
                   backgroundColor={"#398197"}
                   translateY={'-50%'}

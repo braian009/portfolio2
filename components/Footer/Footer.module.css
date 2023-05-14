@@ -20,6 +20,7 @@
 .container .inner div {
     width: 14em;
     position: relative;
-    font-size: 0.7rem;
+    font-size: 0.725rem;
     text-align: center;
+    color: var(--white-secondary)
 }

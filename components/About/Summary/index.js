@@ -30,12 +30,9 @@ const Summary = () => {
       }}
     >
       <div>
-        <h4>some title of some kind</h4>
+        <h4>Things that shaped my learning</h4>
         <p>
-          Non qui velit consequat sit aute nulla elit qui aute exercitation et
-          qui. Non qui velit consequat sit aute nulla elit qui aute exercitation
-          et qui. Non qui velit consequat sit aute nulla elit qui aute motion.
-          exercitation et qui.
+        The learning path was not easy at all, insecurities about my knowledge were recurring. But today I can say that I am in a situation of satisfaction and enthusiasm for what I have learned and for what is to come. Here are some things that brought me here:
         </p>
         <LineDecoration
           width={"4px"}

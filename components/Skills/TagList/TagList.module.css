@@ -11,20 +11,17 @@
   padding: 1.25em 1em;
   margin: 0 auto;
   overflow: hidden;
-  /* background-color: #101319; */
-  /* background-color: #0b1016; */
 }
 
 .tagContainer {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   display: grid;
   place-items: center;
   position: relative;
   text-align: center;
-  color: #d4d4d4;
+  color: var(--white-secondary);
 
-  padding: 0.5em 0.8em;
-  /* text-transform: uppercase; */
+  padding: 0.4em 0.7em;
   cursor: pointer;
 }
 

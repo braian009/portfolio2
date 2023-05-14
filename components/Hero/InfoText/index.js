@@ -48,6 +48,7 @@ const InfoText = () => {
           opacity: 1,
           transition: { delay: 2, duration: 0.8 },
         }}
+        whileHover={{color: "#f8f8f8"}}
       >
         Fullstack developer
         <motion.div
@@ -80,8 +81,7 @@ const InfoText = () => {
           transition: { delay: 2, duration: 0.8 },
         }}
       >
-        Nisi id enim veniam nulla minim veniam laboris eiusmod excepteur
-        eiusmod. Ullamco officia.
+        driven by learning and inspired by the possibilities in my near future
       </motion.p>
     </div>
   );

@@ -2,30 +2,30 @@
   padding: 1em;
   position: relative;
   max-width: 15em;
+  overflow-y: hidden;
 }
 
 .cardContainer > .cardTitle {
   position: relative;
-  width: 50%;
+  width: 60%;
   transform: skew(-15deg);
 }
 
 .cardContainer h3 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: lighter;
   width: 100%;
-  letter-spacing: 0.055em;
+  letter-spacing: 0.0525em;
   position: relative;
   background: none !important;
-  border: 1px solid #398197;;
+  border: 1px solid var(--mid-blue);
 
-  padding: 0.1em 0.2em;
-  padding-left: 1em;
+  padding: 0.1em 0.75em;
   cursor: pointer;
 }
 
 .cardContainer p {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   margin-top: 0.5em;
   color: var(--white-secondary);
 }
@@ -52,6 +52,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+  }
+
+  .cardContainer {
+    overflow-x: hidden;
   }
 
   .cardContainer:nth-child(1) {

@@ -13,7 +13,7 @@ const containerVariants = {
     opacity: 1,
     transition: {
       delay: 0.6,
-      duration: 1.2,
+      duration: 4.5,
       type: "spring",
     },
   },
@@ -21,19 +21,19 @@ const containerVariants = {
 
 const content = [
   {
-    title: "title",
+    title: "Origins",
     description:
-      "Fugiat veniam cupidatat est sint velit reprehenderit culpa culpa laborum laborum pariatur Lorem. culpa culpa laborum laborum pariatur Lor7m.",
+      "Having taken python as an initial tool, after some automations and small projects, django for the backend was the way to go next to postgreSQL",
   },
   {
-    title: "title",
+    title: "Progress",
     description:
-      "Fugiat veniam cupidatat est sint velit reprehenderit culpa culpa laborum laborum pariatur Lorem. culpa culpa laborum laborum pariatur Lor7m.",
+      "Today learning is more inclined to the frontend, the use of react and its extensive ecosystem through next.js is what keeps me busy and entertained at the moment",
   },
   {
-    title: "title",
+    title: "Aspirations",
     description:
-      "Fugiat veniam cupidatat est sint velit reprehenderit culpa culpa laborum laborum pariatur Lorem. culpa culpa laborum laborum pariatur Lor7m.",
+      "The goal ahead is to get a long-term job that allows me to grow both professionally and personally, contributing my knowledge to achieve common team goals.",
   },
 ];
 
