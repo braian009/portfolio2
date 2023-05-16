@@ -4,7 +4,7 @@ import Card from "../Card";
 import { motion } from "framer-motion";
 
 import aboutData from "@/data/about";
-import styles from "./Cards.module.css";
+import styles from "./cards.module.css";
 
 const containerVariants = {
   hidden: {

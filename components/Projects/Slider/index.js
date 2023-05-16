@@ -3,7 +3,7 @@ import * as React from "react";
 import Image from "next/image";
 import Arrow from "./Arrow";
 
-import styles from "./Slider.module.css";
+import styles from "./slider.module.css";
 import { ProjectsContext } from "@/contexts/ProjectsContext";
 
 const Slider = () => {

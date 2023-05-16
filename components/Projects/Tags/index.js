@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { motion } from "framer-motion";
 
-import styles from "./Tags.module.css";
+import styles from "./tags.module.css";
 import { ProjectsContext } from "@/contexts/ProjectsContext";
 
 const Tags = () => {
