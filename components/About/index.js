@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div className={styles.aboutContainer} name="about">
       <Image
-        src={`/./assets/about/aboutpic${active}.jpg`}
+        src={`/assets/about/aboutpic${active}.jpg`}
         fill
         alt={""}
         style={{ objectFit: "cover", opacity: 0.04 }}
@@ -55,7 +55,7 @@ const About = () => {
               top: 0,
               bottom: 0,
               width: "100%",
-              backgroundImage: `url(/./assets/about/clouds.jpg)`,
+              backgroundImage: `url(/assets/about/clouds.jpg)`,
 
               backgroundPosition: "center",
               backgroundSize: "cover",
