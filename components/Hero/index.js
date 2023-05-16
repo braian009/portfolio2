@@ -1,9 +1,11 @@
 import * as React from "react";
-import styles from "./hero.module.css";
+
 import ProfilePic from "./ProfilePic";
 import InfoText from "./InfoText";
 import Socials from "./Socials";
 import Location from "./Location";
+
+import styles from "./hero.module.css";
 
 const Hero = () => {
   return (
@@ -12,7 +14,7 @@ const Hero = () => {
         <ProfilePic />
         <InfoText />
         <Socials />
-        <Location/>
+        <Location />
       </div>
     </div>
   );

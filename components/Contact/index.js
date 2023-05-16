@@ -1,13 +1,13 @@
 import * as React from "react";
-import styles from "./contact.module.css";
+
+import BrandIcon from "../Varied/BrandIcon";
 import EnvelopeIcon from "../Varied/EnvelopeIcon";
 import LinkedinIcon from "../Varied/LinkedinIcon";
 import WhatsappIcon from "../Varied/WhatsappIcon";
-import { motion } from "framer-motion";
-import BrandIcon from "../Varied/BrandIcon";
-import LineDecoration from "../Varied/LineDecoration";
 import ListItemAnimated from "../Varied/ListItemAnimated";
+import { motion } from "framer-motion";
 
+import styles from "./contact.module.css";
 
 const Contact = () => {
   const side = process.browser ? "client" : "server";
@@ -19,8 +19,9 @@ const Contact = () => {
 
     window.location.href = mailToLink;
   };
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} name="contact">
       <BrandIcon />
       <div className={styles.inner}>
         <motion.h1
@@ -32,24 +33,9 @@ const Contact = () => {
               delay: 0.4,
             },
           }}
+          viewport={{ once: "true" }}
         >
           Contact me
-          {/* <LineDecoration
-            width={"100vw"}
-            height={"1px"}
-            left={"-100vw"}
-            top={"50%"}
-            backgroundColor={"#bfd7de"}
-            luminescence
-          />
-          <LineDecoration
-            width={"100vw"}
-            height={"1px"}
-            right={"-100vw"}
-            top={"50%"}
-            backgroundColor={"#bfd7de"}
-            luminescence
-          /> */}
         </motion.h1>
         <div className={styles.socialsContainer}>
           <ul>
@@ -62,14 +48,12 @@ const Contact = () => {
                 <LinkedinIcon />
               </a>
             </ListItemAnimated>
-            <ListItemAnimated delay={1.2}
-            >
+            <ListItemAnimated delay={1.2}>
               <button onClick={handleSendEmail}>
                 <EnvelopeIcon />
               </button>
             </ListItemAnimated>
-            <ListItemAnimated delay={1.6}
-            >
+            <ListItemAnimated delay={1.6}>
               <a
                 href="https://wa.me/5492944700327"
                 target="_blank"

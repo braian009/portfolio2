@@ -1,10 +1,12 @@
 import * as React from "react";
-import styles from "./navbar.module.css";
-import Logo from "./Logo";
-import BurgerIcon from "./NavIcon";
-import { motion, useScroll } from "framer-motion";
-import BrandIcon from "../Varied/BrandIcon";
+
+import { motion } from "framer-motion";
+import BurgerIcon from "./BurgerIcon";
 import LineDecoration from "../Varied/LineDecoration";
+import BrandIcon from "../Varied/BrandIcon";
+import { Link } from "react-scroll";
+
+import styles from "./navbar.module.css";
 
 const navListVariants = {
   open: {
@@ -23,7 +25,7 @@ const navListVariants = {
     opacity: 0,
     clipPath: "inset(0% 0% 0% 100%)",
     transition: {
-      duration: 0.4,
+      duration: 2.4,
       type: "spring",
       stiffness: 400,
       damping: 75,
@@ -50,7 +52,7 @@ const navItemVariants = {
     transition: {
       ease: "easeOut",
       type: "spring",
-      duration: 0.4,
+      duration: 0.8,
     },
   },
 };
@@ -83,61 +85,85 @@ const Navbar = () => {
           className={styles.navMenu}
           animate={`${isOpen ? "open" : "close"}`}
         >
-          <button onClick={() => setIsOpen(!isOpen)}>
-            <BurgerIcon />
-          </button>
           <motion.ul variants={navListVariants}>
-            <motion.li variants={navItemVariants}>
-              About
-              <LineDecoration
-                width={"100vw"}
-                height={"1px"}
-                top={"50%"}
-                translateY={"-50%"}
-                backgroundColor={"#3aa885"}
-                right={"-100vw"}
-                luminescence
-              />
-            </motion.li>
-
-            <motion.li variants={navItemVariants}>
-              Skills
-              <LineDecoration
-                width={"100vw"}
-                height={"1px"}
-                top={"50%"}
-                translateY={"-50%"}
-                backgroundColor={"#3aa885"}
-                right={"-100vw"}
-                luminescence
-              />
-            </motion.li>
-            <motion.li variants={navItemVariants}>
-              Projects
-              <LineDecoration
-                width={"100vw"}
-                height={"1px"}
-                top={"50%"}
-                translateY={"-50%"}
-                backgroundColor={"#3aa885"}
-                right={"-100vw"}
-                luminescence
-              />
-            </motion.li>
-            <motion.li variants={navItemVariants}>
-              Contact
-              <LineDecoration
-                width={"100vw"}
-                height={"1px"}
-                top={"50%"}
-                translateY={"-50%"}
-                backgroundColor={"#3aa885"}
-                right={"-100vw"}
-                luminescence
-              />
-            </motion.li>
-            
+            <Link to="about" smooth={true} offset={-50} duration={500}>
+              <motion.li
+                variants={navItemVariants}
+                whileHover={{ color: "#3e6b79" }}
+              >
+                About
+                <LineDecoration
+                  width={"100vw"}
+                  height={"1px"}
+                  top={"50%"}
+                  translateY={"-50%"}
+                  backgroundColor={"#3aa885"}
+                  right={"-100vw"}
+                  luminescence
+                />
+              </motion.li>
+            </Link>
+            <Link to="skills" smooth={true} offset={-50} duration={500}>
+              <motion.li
+                variants={navItemVariants}
+                whileHover={{ color: "#3e6b79" }}
+              >
+                Skills
+                <LineDecoration
+                  width={"100vw"}
+                  height={"1px"}
+                  top={"50%"}
+                  translateY={"-50%"}
+                  backgroundColor={"#3aa885"}
+                  right={"-100vw"}
+                  luminescence
+                />
+              </motion.li>
+            </Link>
+            <Link to="projects" smooth={true} offset={-10} duration={500}>
+              <motion.li
+                variants={navItemVariants}
+                whileHover={{ color: "#3e6b79" }}
+              >
+                Projects
+                <LineDecoration
+                  width={"100vw"}
+                  height={"1px"}
+                  top={"50%"}
+                  translateY={"-50%"}
+                  backgroundColor={"#3aa885"}
+                  right={"-100vw"}
+                  luminescence
+                />
+              </motion.li>
+            </Link>
+            <Link to="contact" smooth={true} offset={-50} duration={500}>
+              <motion.li
+                variants={navItemVariants}
+                whileHover={{ color: "#3e6b79" }}
+              >
+                Contact
+                <LineDecoration
+                  width={"100vw"}
+                  height={"1px"}
+                  top={"50%"}
+                  translateY={"-50%"}
+                  backgroundColor={"#3aa885"}
+                  right={"-100vw"}
+                  luminescence
+                />
+              </motion.li>
+            </Link>
           </motion.ul>
+          <button
+            onClick={(event) => {
+              event.stopPropagation();
+              setIsOpen(!isOpen);
+              console.log("clickeado");
+            }}
+          >
+            <BurgerIcon isActive={isOpen} />
+          </button>
         </motion.div>
       </div>
     </motion.nav>

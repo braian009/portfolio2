@@ -3,15 +3,16 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.25em;
+  gap: 0.15em;
 
   position: relative;
   width: 100%;
   max-width: 40em;
   padding-top: 0.25em;
-  padding-bottom: 0.75em;
+  padding-bottom: 0.5em;
 
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .detailsCardContainer > div {
@@ -20,9 +21,10 @@
 }
 
 .detailsCardContainer h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-transform: uppercase !important;
   letter-spacing: 0.05em;
+  position: relative;
   font-weight: lighter;
 
   padding-left: 1em;
@@ -30,7 +32,7 @@
 }
 
 .detailsCardContainer p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   width: 100%;
   max-width: 40em;
 
@@ -53,6 +55,7 @@
   transform: skew(15deg);
   align-self: stretch;
   padding: 0 0.75em;
+  width: 4em;
 }
 
 .footer > div button {
@@ -68,7 +71,7 @@
 
 .footer ul {
   padding: 0.5em;
-  padding-left: 1.5em;
+  padding-left: 1em;
 }
 
 .footer ul li {
@@ -84,4 +87,11 @@
 
 .footer ul li + li {
   margin-left: 0.5em;
+}
+
+
+@media (min-width: 35em) {
+  .footer > div {
+    width: 9em;
+  }
 }

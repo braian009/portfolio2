@@ -1,16 +1,17 @@
 import * as React from "react";
-import styles from "./projects.module.css";
-import Image from "next/image";
-import { ProjectContextProvider } from "@/contexts/ProjectsContext";
+
 import Slider from "./Slider";
 import Tags from "./Tags";
 import DetailsCard from "./DetailsCard";
+import Image from "next/image";
+import { ProjectContextProvider } from "@/contexts/ProjectsContext";
 import { motion } from "framer-motion";
+
+import styles from "./projects.module.css";
 
 const Projects = () => {
   return (
-    <div className={styles.container}>
-      
+    <div className={styles.container} name="projects">
       <Image
         src={`/./assets/projects/codee.jpg`}
         fill
@@ -25,6 +26,7 @@ const Projects = () => {
             x: 0,
             transition: { duration: 0.8, stiffness: 400, damping: 75 },
           }}
+          viewport={{ once: "true" }}
         >
           Projects
         </motion.h1>
@@ -43,6 +45,7 @@ const Projects = () => {
                   damping: 75,
                 },
               }}
+              viewport={{ once: "true" }}
               style={{ height: "100%", width: "100%" }}
             >
               <Slider />
@@ -60,6 +63,7 @@ const Projects = () => {
                   damping: 75,
                 },
               }}
+              viewport={{ once: "true" }}
               style={{ width: "100%" }}
             >
               <Tags />
@@ -77,6 +81,7 @@ const Projects = () => {
                   damping: 75,
                 },
               }}
+              viewport={{ once: "true" }}
               style={{ height: "100%", width: "100%" }}
             >
               <DetailsCard />

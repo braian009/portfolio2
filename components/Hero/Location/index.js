@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import LineDecoration from "@/components/Varied/LineDecoration";
 import { motion } from "framer-motion";
+import LineDecoration from "@/components/Varied/LineDecoration";
 import LocationIcon from "@/components/Varied/LocationIcon";
 
 import styles from "./Location.module.css";
@@ -21,6 +21,7 @@ const Location = () => {
           damping: 75,
         },
       }}
+      viewport={{ once: "true" }}
     >
       <div>
         <LocationIcon />
@@ -30,6 +31,7 @@ const Location = () => {
         layout
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 2.4, delay: 2.4 } }}
+        viewport={{ once: "true" }}
       >
         <LineDecoration
           width={"100%"}

@@ -1,11 +1,14 @@
 import * as React from "react";
+
 import Image from "next/image";
-import styles from "./about.module.css";
 import Cards from "./Cards";
 import Summary from "./Summary";
-import { AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion";
+
+import { motion, AnimatePresence } from "framer-motion";
 import InfoIcon from "../Varied/InfoIcon";
+
+import styles from "./about.module.css";
+
 
 const About = () => {
   const [active, setActive] = React.useState(0);
@@ -16,7 +19,7 @@ const About = () => {
   };
 
   return (
-    <div className={styles.aboutContainer}>
+    <div className={styles.aboutContainer} name="about">
       <Image
         src={`/./assets/about/aboutpic${active}.jpg`}
         fill
@@ -31,8 +34,9 @@ const About = () => {
             x: 0,
             transition: { duration: 0.8, stiffness: 400, damping: 75 },
           }}
+          viewport={{ once: "true" }}
         >
-          About
+           About me
         </motion.h1>
 
         <button

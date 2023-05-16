@@ -42,6 +42,7 @@ const ListItemAnimated = ({ children, delay }) => {
       custom={delay}
       initial="hidden"
       whileInView="shown"
+      viewport={{ once: "true" }}
     >
       {children}
     </motion.li>

@@ -1,20 +1,19 @@
 .cardContainer {
   padding: 1em;
   position: relative;
-  max-width: 15em;
-  overflow-y: hidden;
+  max-width: 16em;
 }
 
 .cardContainer > .cardTitle {
   position: relative;
-  width: 60%;
+  width: 100%;
   transform: skew(-15deg);
 }
 
 .cardContainer h3 {
   text-transform: capitalize;
   font-weight: lighter;
-  width: 100%;
+  max-width: 7em;
   letter-spacing: 0.0525em;
   position: relative;
   background: none !important;
@@ -25,7 +24,7 @@
 }
 
 .cardContainer p {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   margin-top: 0.5em;
   color: var(--white-secondary);
 }
@@ -44,6 +43,9 @@
   .cardContainer {
     max-width: 20em;
   }
+
+
+  
 }
 
 @media (min-width: 40em) {
@@ -54,9 +56,8 @@
     justify-items: center;
   }
 
-  .cardContainer {
-    overflow-x: hidden;
-  }
+
+
 
   .cardContainer:nth-child(1) {
     grid-column: 1 / 3;

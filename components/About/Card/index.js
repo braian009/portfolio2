@@ -46,6 +46,7 @@ const Card = ({ id, title, description, activeCard, onChangeCard }) => {
                     repeatType: "reverse",
                   },
                 }}
+                viewport={{ once: "true" }}
               >
                 <LineDecoration
                   width={"2px"}
@@ -64,10 +65,11 @@ const Card = ({ id, title, description, activeCard, onChangeCard }) => {
           initial="hidden"
           whileInView="shown"
           variants={lineVariants}
+          viewport={{ once: "true" }}
         >
           <LineDecoration
             bottom={"0"}
-            right={"-100vw"}
+            left={"0"}
             width={"100vw"}
             backgroundColor={"#398197"}
             height={"1px"}

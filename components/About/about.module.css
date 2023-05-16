@@ -19,6 +19,7 @@
 }
 
 .aboutInner > h1 {
+  color: var(--white-secondary);
   font-size: 1.75rem;
   padding-left: 1rem;
 }

@@ -10,36 +10,42 @@ const DetailsCard = () => {
   return (
     <div className={styles.detailsCardContainer}>
       <div>
-        <h2>{currentProject.name}</h2>
+        <h2>{currentProject.name}
+        
+        </h2>
         <p>{currentProject.description}</p>
       </div>
       <div>
         <div className={styles.footer}>
           <div>
-            <motion.button initial="false" whileHover={{ color: "#ccc" }}>
-              Demo
-              <LineDecoration
-                left={"0"}
-                top={"50%"}
-                height={"50%"}
-                width={"4px"}
-                translateY={"-50%"}
-                luminescence
-                backgroundColor={"#398197"}
-              />
-            </motion.button>
-            <motion.button initial="false" whileHover={{ color: "#ccc" }}>
-              Repo
-              <LineDecoration
-                left={"0"}
-                top={"50%"}
-                height={"50%"}
-                width={"4px"}
-                translateY={"-50%"}
-                luminescence
-                backgroundColor={"#398197"}
-              />
-            </motion.button>
+            <a href={currentProject.links.demo}  target="_blank" rel="noopener noreferrer">
+              <motion.button initial="false" whileHover={{ color: "#ccc" }}>
+                Demo
+                <LineDecoration
+                  left={"0"}
+                  top={"50%"}
+                  height={"50%"}
+                  width={"4px"}
+                  translateY={"-50%"}
+                  luminescence
+                  backgroundColor={"#398197"}
+                />
+              </motion.button>
+            </a>
+            <a href={currentProject.links.repo} target="_blank" rel="noopener noreferrer">
+              <motion.button initial="false" whileHover={{ color: "#ccc" }}>
+                Repo
+                <LineDecoration
+                  left={"0"}
+                  top={"50%"}
+                  height={"50%"}
+                  width={"4px"}
+                  translateY={"-50%"}
+                  luminescence
+                  backgroundColor={"#398197"}
+                />
+              </motion.button>
+            </a>
           </div>
           <ul>
             {currentProject.technologies.map((tech, i) => {

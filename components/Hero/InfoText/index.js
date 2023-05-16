@@ -1,4 +1,5 @@
 import * as react from "react";
+
 import { motion } from "framer-motion";
 import LineDecoration from "@/components/Varied/LineDecoration";
 
@@ -21,6 +22,7 @@ const InfoText = () => {
               delay: 1.2,
             },
           }}
+          viewport={{ once: "true" }}
         >
           Braian
         </motion.h1>
@@ -37,6 +39,7 @@ const InfoText = () => {
               delay: 1.6,
             },
           }}
+          viewport={{ once: "true" }}
         >
           Yanquin
         </motion.h1>
@@ -48,6 +51,7 @@ const InfoText = () => {
           opacity: 1,
           transition: { delay: 2, duration: 0.8 },
         }}
+        viewport={{ once: "true" }}
         whileHover={{color: "#f8f8f8"}}
       >
         Fullstack developer
@@ -62,6 +66,7 @@ const InfoText = () => {
               repeatType: "reverse",
             },
           }}
+          viewport={{ once: "true" }}
         >
           <LineDecoration
             left={"0"}
@@ -80,8 +85,9 @@ const InfoText = () => {
           opacity: 1,
           transition: { delay: 2, duration: 0.8 },
         }}
+        viewport={{ once: "true" }}
       >
-        driven by learning and inspired by the possibilities in my near future
+        Driven by learning and inspired by the possibilities in my near future
       </motion.p>
     </div>
   );

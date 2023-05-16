@@ -28,7 +28,11 @@
   width: 3em;
   height: 3em;
   border-radius: 50%;
-  background-image: linear-gradient(to bottom right, var(--dark-blue), var(--darker-blue));
+  background-image: linear-gradient(
+    to bottom right,
+    var(--dark-blue),
+    var(--darker-blue)
+  );
 }
 
 .navLogo svg {
@@ -60,19 +64,22 @@
   width: 4.5em;
   transform: translateY(-50%);
   cursor: pointer;
-  z-index: 100;
+  z-index: 200 !important;
+  border: none;
 }
 
 .navMenu button svg {
   width: 100%;
   height: 100%;
+  outline: none;
+
 }
 
 .navMenu button svg path {
   fill: #ccc;
 }
 
-.navMenu > ul {
+.navMenu ul {
   display: flex;
   flex-direction: column;
   align-items: flex-art;
@@ -82,7 +89,7 @@
   width: 130%;
   padding: 2em 0;
   transform: translateY(1em) translateX(2.5em) skew(15deg);
-  
+
   border-bottom-left-radius: 22px;
   border-top-left-radius: 22px;
   background-color: hsl(219, 30%, 7%);
@@ -143,11 +150,11 @@
   }
 
   .navMenu ul > div {
-    display: none;
+    display: none !important;
   }
 
-  .navMenu ul > li > div {
-    display: none;
+  .navMenu ul li > div {
+    display: none !important;
   }
 
   .navMenu ul li > div {

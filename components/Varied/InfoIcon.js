@@ -17,8 +17,9 @@ const InfoIcon = () => {
       }}
       whileInView={{
         opacity: 1,
-        transition: {delay: 0.4, duration: 0.4}
+        transition: { delay: 0.4, duration: 0.4 },
       }}
+      viewport={{ once: "true" }}
       fill="#000000"
       width="800px"
       height="800px"

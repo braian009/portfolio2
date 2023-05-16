@@ -20,6 +20,7 @@ const ProfilePic = () => {
               damping: 75,
             },
           }}
+          viewport={{ once: "true" }}
         >
           <Image src="/./assets/profilepicture.jpg" alt={""} fill />
         </motion.div>

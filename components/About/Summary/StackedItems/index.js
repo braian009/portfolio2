@@ -23,6 +23,7 @@ const StackedItems = ({ items }) => {
                 damping: 75,
               },
             }}
+            viewport={{ once: "true" }}
           >
             {item}
             <LineDecoration

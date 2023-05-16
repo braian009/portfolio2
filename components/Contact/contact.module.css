@@ -39,6 +39,7 @@
   position: relative;
   font-size: 1.75rem;
   text-align: center;
+  color: var(--white-secondary);
 }
 
 .socialsContainer {

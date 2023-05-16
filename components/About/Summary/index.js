@@ -1,10 +1,17 @@
 import * as React from "react";
-import styles from "./summary.module.css";
-import { motion } from "framer-motion";
-import LineDecoration from "@/components/Varied/LineDecoration";
-import StackedItems from "./StackedItems";
 
-const values = ["some value", "some value", "some value", "some value"];
+import StackedItems from "./StackedItems";
+import LineDecoration from "@/components/Varied/LineDecoration";
+import { motion } from "framer-motion";
+
+import styles from "./summary.module.css";
+
+const values = [
+  "The fundamentals first",
+  "Books and documentations as source",
+  "Attention to details",
+  "Few sessions, long hours",
+];
 
 const Summary = () => {
   return (
@@ -22,6 +29,7 @@ const Summary = () => {
           damping: 75,
         },
       }}
+      viewport={{ once: "true" }}
       style={{
         position: "absolute",
         width: "100%",
@@ -32,7 +40,12 @@ const Summary = () => {
       <div>
         <h4>Things that shaped my learning</h4>
         <p>
-        The learning path was not easy at all, insecurities about my knowledge were recurring. But today I can say that I am in a situation of satisfaction and enthusiasm for what I have learned and for what is to come. Here are some things that brought me here:
+          The learning process wasn&apos;t easy at all, insecurities about my
+          knowledge were recurring. But today I can say that I&apos;m in a
+          situation of satisfaction and enthusiasm for what I&apos;ve learned
+          and for what is to come. Here are some of the key aspects of my
+          journey, which in some way resume my personal approach to learn and
+          work:
         </p>
         <LineDecoration
           width={"4px"}

@@ -3,6 +3,7 @@ import * as React from "react";
 import Card from "../Card";
 import { motion } from "framer-motion";
 
+import aboutData from "@/data/about";
 import styles from "./Cards.module.css";
 
 const containerVariants = {
@@ -19,24 +20,6 @@ const containerVariants = {
   },
 };
 
-const content = [
-  {
-    title: "Origins",
-    description:
-      "Having taken python as an initial tool, after some automations and small projects, django for the backend was the way to go next to postgreSQL",
-  },
-  {
-    title: "Progress",
-    description:
-      "Today learning is more inclined to the frontend, the use of react and its extensive ecosystem through next.js is what keeps me busy and entertained at the moment",
-  },
-  {
-    title: "Aspirations",
-    description:
-      "The goal ahead is to get a long-term job that allows me to grow both professionally and personally, contributing my knowledge to achieve common team goals.",
-  },
-];
-
 const Cards = ({ activeCard, onChangeCard }) => {
   return (
     <motion.div
@@ -44,8 +27,9 @@ const Cards = ({ activeCard, onChangeCard }) => {
       variants={containerVariants}
       initial="hidden"
       whileInView="shown"
+      viewport={{ once: "true" }}
     >
-      {content.map((card, i) => {
+      {aboutData.map((card, i) => {
         return (
           <Card
             id={i}
