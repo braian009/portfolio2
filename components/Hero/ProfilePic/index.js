@@ -2,7 +2,7 @@ import * as React from "react";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import styles from './profilepic.module.css';
+import styles from './styles.module.css';
 
 const ProfilePic = () => {
   return (
