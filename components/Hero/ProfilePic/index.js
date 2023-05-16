@@ -22,7 +22,7 @@ const ProfilePic = () => {
           }}
           viewport={{ once: "true" }}
         >
-          <Image src="/./assets/profilepicture.jpg" alt={""} fill />
+          <Image src="/./assets/hero/profilepic.jpg" alt={""} fill />
         </motion.div>
   )
 }

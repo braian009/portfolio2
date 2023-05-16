@@ -8,16 +8,13 @@
   width: 11em;
 
   margin-left: 1em;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
+  border-radius: 50%;
 }
 
 .picture img {
   object-fit: cover;
-  border-radius: 22px;
-  opacity: 0.3;
+  border-radius: 50%;
+  opacity: 0.7;
 }
 
 @media (min-width: 35em) {

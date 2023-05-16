@@ -24,5 +24,6 @@
   height: 100%;
   border-radius: 22px;
 
-  box-shadow: 0 0 13.1544px var(--mid-blue), 0 0 3.7584px var(--mid-blue), 0 0 1.8792px var(--mid-blue);
+  box-shadow: 0 0 13.1544px var(--mid-blue), 0 0 3.7584px var(--mid-blue),
+    0 0 1.8792px var(--mid-blue);
 }
