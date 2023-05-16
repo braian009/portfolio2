@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <div className={styles.container} name="projects">
       <Image
-        src={`/assets/projects/codee.jpg`}
+        src={`/codee.jpg`}
         fill
         alt={""}
         style={{ objectFit: "cover", opacity: 0.05 }}
