@@ -10,7 +10,7 @@ const values = [
   "The fundamentals first",
   "Books and documentations as source",
   "Attention to details",
-  "Few sessions, long hours",
+  "Patience",
 ];
 
 const Summary = () => {

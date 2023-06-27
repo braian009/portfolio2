@@ -32,12 +32,31 @@ export default [
     technologies: [
       "react",
       "styled-components",
-      "react-router",,
+      "react-router",
+      ,
       "framer-motion",
     ],
     links: {
       repo: "https://github.com/braian009/music-roulette",
       deploy: "https://music-roulette-444.web.app",
+    },
+  },
+  {
+    id: 3,
+    name: "B4 garage (remake)",
+    image: "/b4-garage-remake.png",
+    description:
+      "Remake of the B4 garage website, this time built with Next.js. Everything was built from scratch, with an added layer of complexity in terms of design as well as functionality with the addition of a store. ",
+    technologies: [
+      "react",
+      "redux",
+      "redux-toolkit",
+      "redux-persist",
+      "framer-motion",
+    ],
+    links: {
+      repo: "https://github.com/braian009/b4-garage-remake",
+      demo: "https://b4-garage.vercel.app",
     },
   },
 ];

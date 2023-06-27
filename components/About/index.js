@@ -55,6 +55,7 @@ const About = () => {
               top: 0,
               bottom: 0,
               width: "100%",
+              backgroundColor: "#0f2329",
               backgroundImage: `url(/clouds.jpg)`,
 
               backgroundPosition: "center",
