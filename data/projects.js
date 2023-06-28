@@ -38,7 +38,7 @@ export default [
     ],
     links: {
       repo: "https://github.com/braian009/music-roulette",
-      deploy: "https://music-roulette-444.web.app",
+      demo: "https://music-roulette-444.web.app",
     },
   },
   {
